@@ -19,8 +19,7 @@
  - Got an idea for curl's 25th birthday: [curl
    v8](https://curl.se/mail/lib-2021-09/0009.html)
 
- - My talk at netnod tech meeting on October 13 was announced:
-   https://www.netnod.se/netnod-events/netnod-tech-meeeting-2021-1/agenda
+ - My talk at netnod tech meeting on October 13 was announced: [curl is everywhere](https://www.netnod.se/netnod-events/netnod-tech-meeeting-2021-1/agenda)
    
  - Found myself listed on [the weirdest
    website](https://www.celebsagewiki.com/daniel-stenberg)
