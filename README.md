@@ -1,4 +1,6 @@
-# Daniel's weekly report September 3, 2021
+# Daniel's weekly report
+
+# September 3, 2021
 
 ## Happened this week
 
@@ -37,7 +39,11 @@
 
  - More hyper work to do.
 
-# Daniel's weekly report August 27, 2021
+## Comments
+
+If you have any comments, reactions or questions. [Start a discussion thread](https://github.com/bagder/log/discussions).
+
+# August 27, 2021
 
 ## Happened this week
 
@@ -63,7 +69,7 @@
  - It would be fun to get back to fix some of the worst HTTP/3 bugs that
    have now started to pile up
 
-# Daniel's weekly report August 20, 2021
+# August 20, 2021
 
 ## Happened this week
  - Entered feature freeze period for curl for pending release (Sep 15th)
