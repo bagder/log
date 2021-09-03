@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# Daniel's weekly report September 3, 2021
 
-You can use the [editor on GitHub](https://github.com/bagder/log/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Happened this week:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ - Did more work on hyper. Now at 64 disabled tests remaining to
+   fix. Primarily I fixed how libcurl does Transfer-Encoding in the presence
+   of Content-Length headers, as it was previously done wrongly. I then got a
+   little stuck on NTLM with CONNECT to a proxy but I've figured out roughly
+   what's wrong and that needs to be done. It's just a little complicated.
 
-### Markdown
+ - Moved a lot of mailing lists from cool.haxx.se to lists.haxx.se as a step
+   in the shutting down of the old dying server. The libssh2 website is the
+   last one to get transitioned and it is now in progress.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ - Extended the curl man page with examples - for every single command line
+   option - and I'm working on polishing up examples and more in the libcurl
+   option man pages.
 
-```markdown
-Syntax highlighted code block
+ - Got an idea for curl's 25th birthday: curl v8:
+   https://curl.se/mail/lib-2021-09/0009.html
 
-# Header 1
-## Header 2
-### Header 3
+ - My talk at netnod tech meeting on October 13 was announced:
+   https://www.netnod.se/netnod-events/netnod-tech-meeeting-2021-1/agenda
 
-- Bulleted
-- List
+## Blog posts:
 
-1. Numbered
-2. List
+ - working on a (curl) docs post
+ - working on a post-quantum curl post
 
-**Bold** and _Italic_ and `Code` text
+## Coming up:
 
-[Link](url) and ![Image](src)
-```
+ - More hyper work to do.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bagder/log/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
