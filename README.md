@@ -21,6 +21,9 @@
 
  - My talk at netnod tech meeting on October 13 was announced:
    https://www.netnod.se/netnod-events/netnod-tech-meeeting-2021-1/agenda
+   
+ - Found myself listed on the weirdest web site:
+   https://www.celebsagewiki.com/daniel-stenberg
 
 ## Blog posts:
 
