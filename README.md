@@ -25,6 +25,10 @@
  - Found myself listed on the weirdest web site:
    https://www.celebsagewiki.com/daniel-stenberg
 
+ - I put this weekly report up on github and made it available to the world:
+   https://bagder.github.io/log/ - I will edit out private data and names from
+   the public version.
+
 ## Blog posts:
 
  - working on a (curl) docs post
