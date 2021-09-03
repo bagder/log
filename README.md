@@ -1,6 +1,6 @@
 # Daniel's weekly report September 3, 2021
 
-## Happened this week:
+## Happened this week
 
  - Did more work on hyper. Now at 64 disabled tests remaining to
    fix. Primarily I fixed how libcurl does Transfer-Encoding in the presence
@@ -29,18 +29,18 @@
    world](https://bagder.github.io/log/) - I will edit out private data and
    names from the public version.
 
-## Blog posts:
+## Blog posts
 
  - working on a (curl) docs post
  - working on a post-quantum curl post
 
-## Coming up:
+## Coming up
 
  - More hyper work to do.
 
 # Daniel's weekly report August 27, 2021
 
-## Happened this week:
+## Happened this week
 
  - Did more work on hyper. Now at only 73 disabled tests remaining to fix.
  - Had meeting with XXXXXXX about tiny curl
@@ -54,10 +54,10 @@
    supporting this protocol. If/when the next step will be taken I'm not
    sure.
 
-## Blog posts:
+## Blog posts
  - none
 
-## Coming up:
+## Coming up
  - More services to move so that I can finally shut down my old server
  - More hyper work to do, and I figured out problems with transfer-encoding
    in curl I should address. Will also be good for the hyper test status.
@@ -66,17 +66,17 @@
 
 # Daniel's weekly report August 20, 2021
 
-## Happened this week:
+## Happened this week
  - Entered feature freeze period for curl for pending release (Sep 15th)
  - Working slowly on improving 1xx response handling with hyper. At "just" 93
    remaining tests disabled for hyper builds
  - kicked off debugging-work on Android with XXXXXXX in a productive meeting
 
-## Blog posts:
+## Blog posts
  - [a GitHub Star](]https://daniel.haxx.se/blog/2021/08/11/a-github-star/)
  - [early me caught on TV](https://daniel.haxx.se/blog/2021/08/19/early-me-caught-on-tv/)
 
-## Coming up:
+## Coming up
  - More debugging with XXXXXXX
  - Fix more tests to work with hyper
 
