@@ -1,5 +1,66 @@
 # Daniel's weekly report
 
+# September 10, 2021
+
+## Happened this week
+
+ - Got more hyper issues reported. Turns out my h2 testings with it has been
+   very thin so far and curl+hyper doesn't properly send the correct set of
+   psuedo headers, which makes HTTP/2 requests fail against servers that are
+   not very liberal in what they accept.
+
+ - [The Rustacean Station Podcast
+   #35](https://rustacean-station.org/episode/035-daniel-stenberg/) was
+   published featuring me as a guest. A podcast episode about rust in curl and
+   related stuff.
+
+ - I was contacted by a lawyer who seeked my help and I have agreed to serve
+   as an "exepert witness" in a Swedish web scraping court case that is due to
+   go to court in mid October. I might reveal further details on this after
+   I've done my part.
+
+ - The transition of servers and services from our old physical server over to
+   our new VPS is now *very* close to done. At this time there's only one
+   single website left on the old hardware. `libssh2.org` still waits for a
+   DNS update, but [www.libssh2.org](https://www.libssh2.org/) has moved so
+   I've made the first name redirect to the later for now to better survive a
+   potential HW crash before the DNS gets updated...
+
+ - We ran [rockbox.org](https://rockox.org)'s DNS up until now but it has now
+   finally been handed over to the successors.
+
+ - It has been a very long time coming, but I finally registered
+   [c-ares.org](https://c-ares.org) and moved over the c-ares website to that
+   domain. The former host `c-ares.haxx.se` will now simply redirect to the
+   new name.
+
+ - We got **two more** "last minute" security problems reported for curl for
+   the pending next release. Confirmed, patched confirmed, CVEs allocated,
+   things are progressing. All in all now at three CVEs in the coming release.
+
+ - Another podcast that I participated in was published: the Popcast. The
+   episode is called [total
+   recurl](https://popcast-d9f7b6dc.simplecast.com/episodes/episode-81-total-recurl-with-curl-founder-daniel-stenberg). (This
+   one was recorded earlier this summer.)
+
+ - I moved most contents of my personal website
+   [daniel.haxx.se](https://daniel.haxx.se/) over to get stored in git on
+   github for easier maintenance.
+
+## Blog posts
+
+ - [Making world-class docs takes effort](https://daniel.haxx.se/blog/2021/09/04/making-world-class-docs-takes-effort/)
+
+## Coming up
+
+ - meeting with XXXXXXXX on Tuesday
+ - need to come up with a few curl webinar topics for the autum...
+ - Next week is **release week**. curl 7.79.0 is shipping on Wednesday.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # September 3, 2021
 
 ## Happened this week
@@ -22,7 +83,7 @@
    v8](https://curl.se/mail/lib-2021-09/0009.html)
 
  - My talk at netnod tech meeting on October 13 was announced: [curl is everywhere](https://www.netnod.se/netnod-events/netnod-tech-meeeting-2021-1/agenda)
-   
+
  - Found myself listed on [the weirdest
    website](https://www.celebsagewiki.com/daniel-stenberg)
 
@@ -84,4 +145,3 @@ If you have any comments, reactions or questions. [Start a discussion thread](ht
 ## Coming up
  - More debugging with XXXXXXX
  - Fix more tests to work with hyper
-
