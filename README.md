@@ -1,5 +1,68 @@
 # Daniel's weekly report
 
+# September 17, 2021
+
+## Happened this week
+
+ - Had a great meeting with XXXXXXX. They sound very positive and we're on
+   track for a support contract.
+
+ - I shipped [curl 7.79.0](https://curl.se/changes.html#7_79_0) on Wednesday,
+   did the [release presentation video](https://youtu.be/1y7BR0LZEuM) and it
+   felt great - no less than three security advisories were also published in
+   association with the release. About 24 hours later, we got a serious enough
+   bug-report on HTTP/2 code filed that made me decide we can't wait a full
+   release cycle with this and we need a patch release asap. Next Wednesday is
+   now planned to be come 7.79.1 day. We will also merge other bug-fixes that
+   make sense that we manage to come up with in time.
+
+ - I did a recording of my 'just curl it' presentation for Tuesday at WebExpo.
+   It'll still be broadcasted live and I will be there (online) to do the Q&A
+   after the talk.
+   
+ - Tweaked the
+   [vulns-per-year](https://curl.se/dashboard1.html#vulns-per-year) graph in
+   the curl dashboard to better visualize when vulnerabilities were introduced
+   in the code vs when they were fixed. I also added a "man pages" graph that
+   will show up for the first time tomorrow in the dashboard.
+   
+ - I took the subject of [Above and beyond 32
+   protocols](https://curl.se/mail/lib-2021-09/0029.html) to the mailing
+   list. It primarily concerns a bitmask in the API that is about to get full
+   and how to handle growing it above 32 bits in size. [The
+   conclusion](https://curl.se/mail/lib-2021-09/0051.html) is probably that we
+   will add a replacement option that uses a 64 bit data type when the day
+   comes and we need to.
+
+ - Amusement (A): Fabien Benetou posted a [picture on
+   twitter](https://twitter.com/utopiah/status/1438863280630648834) with
+   license information from his Harman Kardon Enchant speakers. It shows curl
+   being used but they managed to mess up both the name of curl and the link.
+   Weirdly enough, they link to an (outdated) URL for a podcast episode that I
+   participated in back in 2016! [Working
+   link](https://ma.ttias.be/syscast/4-curl-libcurl-future-web-daniel-stenberg/)
+   
+ - Amusement (B): I got an email about [someone wanting my help to fix a bug in
+   a PS5 game](https://twitter.com/bagder/status/1437087731767721994).
+
+## Blog posts
+
+ - [Heading towards curl eight](https://daniel.haxx.se/blog/2021/09/13/heading-towards-curl-eight/)
+ - [curl 7.79.0 – secure local cookies](https://daniel.haxx.se/blog/2021/09/15/curl-7-79-0-secure-local-cookies/)
+ - [You wanted WebSockets?](https://daniel.haxx.se/blog/2021/09/16/you-wanted-websockets/)
+
+## Coming up
+
+ - On Tuesday the 21st: [just curl
+   it](https://www.webexpo.net/prague2021/talk/just-curl-it) on WebExpo in
+   Prague.
+ - On Wednesday the 22nd: curl 7.79.1 release.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # September 10, 2021
 
 ## Happened this week
