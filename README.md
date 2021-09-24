@@ -1,5 +1,64 @@
 # Daniel's weekly report
 
+# September 24, 2021
+
+## Happened this week
+
+ - I did my [just curl
+   it](https://www.webexpo.net/prague2021/talk/just-curl-it) presentation on
+   WebExpo in Prague. Just a little over 40 minutes of me blabbing. To my
+   great disappointment there was not a single question for me in the Q&A in
+   the "speaker's corner" afterwards!
+
+ - Shipped curl 7.79.1 on Wednesday with all that entails. This time no major
+   regression has yet been detected so the plan is now to open the feature
+   window on Monday and start working toward a 7.80.0 release in November.
+
+ - AAAAAAAAA signed up for curl support.
+
+ - Had a meeting with ZZZZZZZZ on Friday about support for
+   [tiny-curl](https://curl.se/tiny/) on multiple RTOSes. Seems doable and
+   fun!
+
+ - Willy Tarreau of HAProxy fame
+   [tweeted](https://twitter.com/WillyTarreau/status/1441051288997924870)
+   about their working adding HTTP/3 support and yes, curl was mentioned.
+
+ - The McAfee product "ENS for Windows" obviously uses libcurl because they
+   published a [Security
+   Bulletin](https://kc.mcafee.com/corporate/index?page=content&id=SB10367)
+   mentioning libcurl upgrades. A little puzzling they claim at least one of
+   the fixed curl flaws to be "critical" which made me curious... but there's
+   a lack of details.
+
+ - I got a few ["curl
+   contributor"](https://twitter.com/bagder/status/1440578821242036237) mugs
+   sent over from wolfSSL HQ
+ 
+ - I got myself a ["maintainer maintainer maintainer"
+   tshirt](https://twitter.com/bagder/status/1439984643424538628) from the
+   Changelog podcast team.
+   
+ - I got more "loot" from GitHub, including [this fancy
+   mug](https://twitter.com/bagder/status/1440026341026537491).
+
+## Blog posts
+
+ - [curl 7.79.1 – patched up and ready](https://daniel.haxx.se/blog/2021/09/22/curl-7-79-1-patched-up-and-ready/)
+ - [curl joins the reborn IBB bug-bounty program](https://daniel.haxx.se/blog/2021/09/23/curl-joins-the-reborn-ibb-bug-bounty-program/)
+
+## Coming up
+
+ - curl feature window opens Monday, I'm expecting to mostly work with PR
+   merges. Big and small.
+ - there's a twenty year anniversary tomorrow that I'll blog about
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
+
 # September 17, 2021
 
 ## Happened this week
