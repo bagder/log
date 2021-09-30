@@ -148,7 +148,7 @@
    I've made the first name redirect to the later for now to better survive a
    potential HW crash before the DNS gets updated...
 
- - We ran [rockbox.org](https://rockox.org)'s DNS up until now but it has now
+ - We ran [rockbox.org](https://rockbox.org)'s DNS up until now but it has now
    finally been handed over to the successors.
 
  - It has been a very long time coming, but I finally registered
