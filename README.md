@@ -74,6 +74,12 @@
 
 ## Coming up
 
+ - Doing a few private commercial releases for customers
+ - A private presentation for company SSSSSSS on Wednesday
+ - Write up a plan for feature NNNNNNN and see if we and company VVVVVVVVV
+   can agree on how to fund this!
+ - Start finalizing my presentation for October 13
+
 ## Feedback
 
 [Comment here](https://github.com/bagder/log/discussions)
