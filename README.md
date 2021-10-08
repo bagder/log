@@ -10,8 +10,8 @@
   much.
 
 - I did a curl talk Wednesday for a Swiss company. This, my 91st talk in front
-  of audience since 2015 had large overlaps in topic and slides with my 92nd
-  talk I will do next week at Netnod.
+  of an audience since 2015 had large overlaps in topic and slides with my
+  92nd talk I will do next week at Netnod.
 
 - I made a [roffit](https://github.com/bagder/roffit) 0.13 release, which is
   the first "official" roffit release I've tagged and marked as a release on
