@@ -5,7 +5,7 @@
 ## Happened this week
 
 - Nova 2021 was an online GitHub star conference that ran Monday/Tuesday this
-  week. I browsed it casually since it was awkard time zone wise and I feel
+  week. I browsed it casually since it was awkward time zone wise and I feel
   that a lot of what GitHub works on these days are not things that concern me
   much.
 
@@ -51,14 +51,14 @@
 
 ## Coming up
 
-- I'll join Eddie Jaoude's live-stream on Monday! Follow my twitter stream for
-  details.
+- I'll join Eddie Jaoude's live-stream on Monday! Follow my [twitter
+  stream](https://twitter.com/bagder) for details.
 
 - I'm doing a curl talk at Netnod tech meeting on Wednesday.
 
 - Also Wednesday: we enter **feature freeze** in the curl project. This means
   that we will not merge any more features and only work on bug-fixes for the
-  following four weeks, with the goal of shipping curl 7.80.0 on Novemeber 10.
+  following four weeks, with the goal of shipping curl 7.80.0 on November 10.
 
 ## Feedback
 
