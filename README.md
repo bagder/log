@@ -1,5 +1,70 @@
 # Daniel's weekly report
 
+# October 8, 2021
+
+## Happened this week
+
+- Nova 2021 was an online GitHub star conference that ran Monday/Tuesday this
+  week. I browsed it casually since it was awkard time zone wise and I feel
+  that a lot of what GitHub works on these days are not things that concern me
+  much.
+
+- I did a curl talk Wednesday for a Swiss company. This, my 91st talk in front
+  of audience since 2015 had large overlaps in topic and slides with my 92nd
+  talk I will do next week at Netnod.
+
+- I made a [roffit](https://github.com/bagder/roffit) 0.13 release, which is
+  the first "official" roffit release I've tagged and marked as a release on
+  GitHub. Figured it was about time since we've now used roffit on the curl
+  site to render man pages into HTML for fourteen years or so!
+
+- I worked on the Netnod presentation and sent off [the
+  slides](https://daniel.haxx.se/media/netnod-curl-is-everywhere-2021.pdf).
+  They want them ahead of time to put them on a presentation computer. Makes
+  me appreciate the libreoffice macro I use that expands animations into
+  multiple PDF pages so that I can provide a standard PDF that still has the
+  animations (lines appearing line yb line etc) that I like to
+  use. libreoffice's ability to export to the keynote or powerpoint formats is
+  way too bad.
+
+- I worked on content for my webinar on October 21, **getting started with
+  libcurl**. I want the presentation to run no longer than maybe 30 minutes
+  and it takes some trimming and thinking to make sure I get as good content
+  as possible in that limited period.
+
+- I was contacted by a security research team who is currently working on a
+  security paper on URL parsers and problems with them and I had the pleasure
+  of reviewing it.
+  
+- Made [a new graph](https://twitter.com/bagder/status/1446029094236348416)
+  for the [curl dashboard](https://curl.se/dashboard.html). It measures the
+  life-time of all issues that are fixed/closed with a git commit
+  message. Turns out the 12 month median time is now less than 20 hours.
+  
+- I finally pressed the magic keys in the right order on my router and now I
+  have working IPv6 connectivity in my household.
+
+## Blog posts
+
+ - [Post-Quantum curl](https://daniel.haxx.se/blog/2021/10/04/post-quantum-curl/)
+ - [One new contributor every 3.4 days](https://daniel.haxx.se/blog/2021/10/04/one-new-contributor-every-3-4-days/)
+
+## Coming up
+
+- I'll join Eddie Jaoude's live-stream on Monday! Follow my twitter stream for
+  details.
+
+- I'm doing a curl talk at Netnod tech meeting on Wednesday.
+
+- Also Wednesday: we enter **feature freeze** in the curl project. This means
+  that we will not merge any more features and only work on bug-fixes for the
+  following four weeks, with the goal of shipping curl 7.80.0 on Novemeber 10.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # October 1, 2021
 
 ## Happened this week
