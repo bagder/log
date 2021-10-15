@@ -1,5 +1,51 @@
 # Daniel's weekly report
 
+# October 15, 2021
+
+## Happened this week
+
+- I joined [Eddie Jaoude's
+  live-stream](https://www.youtube.com/watch?v=X5SGO8cUG8o) on Monday and we
+  talked curl, working on open source and exactly how widely used curl is for
+  over an hour. Lots of fun.
+
+- I presented [curl is
+  everywhere](https://daniel.haxx.se/media/netnod-curl-is-everywhere-2021.pdf)
+  at the Netnod Tech meeting. My first presentation done in person since
+  February 2020! I felt a little "rusty" but I think it was appreciated and
+  got some good questions in the end.
+  
+- I reviewed a coming security paper on problems and insecurities with
+  different URL parsers, and since the authors of this report found a related
+  curl bug I fixed how curl [didn't do percent decoding of host
+  names](https://github.com/curl/curl/issues/7830). Not at all as
+  straight-forward as it sounds...
+  
+- I sent off a contract development proposal for a feature I know lots of
+  people would like.
+  
+- I worked on some tiny-curl issues I shipped in the recent release, mostly as
+  a result of the internal changes of select-handling between the two most
+  recent tiny-curl releases. There will be a tiny-curl patch release soon.
+
+## Blog posts
+
+- [Coming webinar: getting started with libcurl](https://daniel.haxx.se/blog/2021/10/12/coming-webinar-getting-started-with-libcurl/)
+- [curl installations per capita](https://daniel.haxx.se/blog/2021/10/15/curl-installations-per-capita/)
+
+## Coming up
+
+- I'll serve as an "expert witness" on Wednesday in a trial involving
+  web-scraping
+  
+- I'm doing a podcast appearance on Tuesday
+
+- The **gettting started with libcurl** webinar happens on Thursday
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # October 8, 2021
 
 ## Happened this week
