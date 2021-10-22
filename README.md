@@ -1,5 +1,61 @@
 # Daniel's weekly report
 
+# October 22, 2021
+
+## Happened this week
+
+- The trial I've mentioned before in which I was going to be an expert witness
+  was settled, so I didn't get to do anything in court...
+
+- The Swedish TV-show 'Hackad' aired and I got help by friends to identify a
+  few scenes that use curl. So I blogged about it.
+
+- I was a guest on the [Inside Security](https://youtu.be/06Xfa2AvQrw)
+  podcast, and talked about curl... This made it my 25th ever [podcast episode
+  participation](https://daniel.haxx.se/podcasts.html)!
+
+- The **getting started with libcurl** webinar happened. I'll post a youtube
+  link here and on twitter once it becomes available.
+
+- I've returned to working on [the hyper
+  backend](https://github.com/curl/curl/wiki/Hyper) in curl this
+  week. Basically grabbing one disabled test case at a time. The goal is to
+  have no tests "batch disabled" because of hyper. They all need to be
+  investigated and either: A) disabled in the test because the test verifies
+  something hyper doesn't support (should not be very common) or B) the test
+  should be made to work when built with hyper. In the (B) cases, it might
+  mean fixing the test or fixing the curl code, depending on the
+  circumstances.
+
+- We officially dropped out from `hacktoberfest` this week. Mostly because
+  their setup and new requirements annoys me: previously we've just had to add
+  the right label to the GitHub repo and once someone's PR was merged, they
+  could apply for a tshirt etc. This year however, they have changed the rules
+  so they no longer accept the way we merge pull-requests in the project as
+  the "legitimate way" for users to claim they had it merged. We now need to
+  add a special tag on every PR that is deemed fine for hacktoberfest. Since
+  we don't know which PRs that would be considered, we would basically have to
+  add it to every PRs or the PR author would have to ask for it (which might
+  not be obvious to that person).
+
+- I received a [github star
+  keycap](https://twitter.com/bagder/status/1450073498349707268).
+
+## Blog posts
+
+- [Hackad: curl use on TV](https://daniel.haxx.se/blog/2021/10/19/hackad-curl-use-on-tv/)
+- [The most used software components in the world](https://daniel.haxx.se/blog/2021/10/21/the-most-used-software-components-in-the-world/)
+
+## Coming up
+
+- More hyper fixes. I can sense that there's light somewhere at the end of
+  this very long tunnel...
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # October 15, 2021
 
 ## Happened this week
@@ -14,16 +70,16 @@
   at the Netnod Tech meeting. My first presentation done in person since
   February 2020! I felt a little "rusty" but I think it was appreciated and
   got some good questions in the end.
-  
+
 - I reviewed a coming security paper on problems and insecurities with
   different URL parsers, and since the authors of this report found a related
   curl bug I fixed how curl [didn't do percent decoding of host
   names](https://github.com/curl/curl/issues/7830). Not at all as
   straight-forward as it sounds...
-  
+
 - I sent off a contract development proposal for a feature I know lots of
   people would like.
-  
+
 - I worked on some tiny-curl issues I shipped in the recent release, mostly as
   a result of the internal changes of select-handling between the two most
   recent tiny-curl releases. There will be a tiny-curl patch release soon.
@@ -37,7 +93,7 @@
 
 - I'll serve as an "expert witness" on Wednesday in a trial involving
   web-scraping
-  
+
 - I'm doing a podcast appearance on Tuesday
 
 - The **gettting started with libcurl** webinar happens on Thursday
@@ -81,12 +137,12 @@
 - I was contacted by a security research team who is currently working on a
   security paper on URL parsers and problems with them and I had the pleasure
   of reviewing it.
-  
+
 - Made [a new graph](https://twitter.com/bagder/status/1446029094236348416)
   for the [curl dashboard](https://curl.se/dashboard.html). It measures the
   life-time of all issues that are fixed/closed with a git commit
   message. Turns out the 12 month median time is now less than 20 hours.
-  
+
 - I finally pressed the magic keys in the right order on my router and now I
   have working IPv6 connectivity in my household.
 
