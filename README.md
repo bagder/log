@@ -1,5 +1,88 @@
 # Daniel's weekly report
 
+# October 29, 2021
+
+## Happened this week
+
+- Worked more on enabling tests for hyper builds. I did a [live-coding session
+  on Twitch](https://www.twitch.tv/curlhacker) (video
+  [here](https://youtu.be/4arsI2VBLBo)) with a lot of work on fixing tests,
+  which turned out fairly productive (the entertaining value however I'm less
+  sure of =)). I'm now at **34** disabled tests remaining to fix. It is still
+  too many for me to make any predictions about when I will reach zero, as it
+  also depends on what other work that will fall into my lap.
+
+- I released [c-ares](https://c-ares.org) 1.18.0 only to a few days later
+  release a follow-up 1.18.1 due to a (silly) regression. I'm a c-ares
+  maintainer but honestly, I don't do much in the project other than pressing
+  the right key sequences when a release needs to happen. **Brad House** is the
+  real hero behind most of the recent c-ares action.
+
+- I learned that "composer 2.0", which is the current incarnation of the PHP
+  package manager, is a heavy user of curl. Jordi Boggiano
+  [said](https://twitter.com/seldaek/status/1452630210650726405) **98%** of
+  its installs use "ext-curl", the PHP binding for curl.
+
+- I met with "a huge biotech company" and discussed providing and supporting
+  [tiny-curl](https://curl.se/tiny) on the [INTEGRITY
+  RTOS](https://en.wikipedia.org/wiki/Integrity_(operating_system)) (and some
+  more details). It seems like a perfect match to me and I have good feeling
+  about this project.
+
+- I published my [GitHub wish-list](https://bagder.github.io/github-feedback/),
+  which is just my long-standing list of ideas I would like GitHub to address
+  better.
+
+- I (jokingly, I promise!) asked the cast of the Swedish TV series
+  [hackad](https://daniel.haxx.se/blog/2021/10/19/hackad-curl-use-on-tv/) if
+  they're selling sticker-space on their laptops for a possible future second
+  season of the show, which ultimately had me mailing them all a set of curl
+  stickers each. After all, several of their sticker-packed laptops were
+  visible multiple times in the series. Now I really want there to be a second
+  season and that the team actually puts curl stickers on their machines and
+  then that those eventually appear on TV. Playing the long game here! :-)
+
+- Open Source newbie ZZZZ YYYYYYY emailed me, asking about advice and
+  experiences on how to think and act when running a project and since he
+  reached me at a particularly good moment we had a meeting Thursday. I'm not a
+  general know-it-all person on open source, but I can certainly share what I
+  have learned of what has worked for me in the projects I've worked in, in
+  the hopes that maybe it can work elsewhere as well.
+
+- I managed to get myself mentioned *twice* in the most recent edition of the
+  [Bulletproof TLS
+  Newsletter](https://www.feistyduck.com/bulletproof-tls-newsletter/issue_82_expiration_of_dst_root_ca-causes_problems_with_lets_encrypt_certificates). Both
+  for the [post-quantum
+  curl](https://daniel.haxx.se/blog/2021/10/04/post-quantum-curl/) work and
+  for my update on [the sad OpenSSL QUIC API
+  situation](https://daniel.haxx.se/blog/2021/10/25/the-quic-api-openssl-will-not-provide/).
+
+- We got a fun "curl sighting" in the wild: [the BMW R 1250 GS
+  Adventure](https://www.bmw-motorrad.co.uk/en/models/adventure/r1250gsadventure.html)
+  motorbike is obviously using it. The image of the curl license shown on the
+  bike's display is now up on [the screenshot collection
+  page](https://daniel.haxx.se/blog/2016/10/03/screenshotted-curl-credits/) of
+  mine.
+
+## Blog posts
+
+- [The QUIC API OpenSSL will not provide](https://daniel.haxx.se/blog/2021/10/25/the-quic-api-openssl-will-not-provide/)
+- [a GitHub wish list](https://daniel.haxx.se/blog/2021/10/26/a-github-wishlist/)
+
+## Coming up
+
+- Next week we've switched off Daylight Saving in Europe but not in the US and
+  this makes it the "crazy time zone week". The US switches a week later.
+- More hyper fixes
+- a libcurl presentation for wolfSSL engineers on Thursday
+- On Nov 4 we've had the curl website on [curl.se](https://curl.se/) for a
+  whole year
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # October 22, 2021
 
 ## Happened this week
@@ -14,7 +97,7 @@
   podcast, and talked about curl... This made it my 25th ever [podcast episode
   participation](https://daniel.haxx.se/podcasts.html)!
 
-- The **getting started with libcurl** webinar happened. I'll post a youtube
+- The **getting started with libcurl** webinar happened. I'll post a YouTube
   link here and on twitter once it becomes available.
 
 - I've returned to working on [the hyper
@@ -38,8 +121,8 @@
   add it to every PRs or the PR author would have to ask for it (which might
   not be obvious to that person).
 
-- I received a [github star
-  keycap](https://twitter.com/bagder/status/1450073498349707268).
+- I received a [GitHub star
+  key cap](https://twitter.com/bagder/status/1450073498349707268).
 
 ## Blog posts
 
@@ -96,7 +179,7 @@
 
 - I'm doing a podcast appearance on Tuesday
 
-- The **gettting started with libcurl** webinar happens on Thursday
+- The **getting started with libcurl** webinar happens on Thursday
 
 ## Feedback
 
@@ -123,10 +206,10 @@
 - I worked on the Netnod presentation and sent off [the
   slides](https://daniel.haxx.se/media/netnod-curl-is-everywhere-2021.pdf).
   They want them ahead of time to put them on a presentation computer. Makes
-  me appreciate the libreoffice macro I use that expands animations into
+  me appreciate the LibreOffice macro I use that expands animations into
   multiple PDF pages so that I can provide a standard PDF that still has the
-  animations (lines appearing line yb line etc) that I like to
-  use. libreoffice's ability to export to the keynote or powerpoint formats is
+  animations (lines appearing line by line etc) that I like to
+  use. LibreOffice's ability to export to the keynote or PowerPoint formats is
   way too bad.
 
 - I worked on content for my webinar on October 21, **getting started with
@@ -200,7 +283,7 @@
    special characters in file and field names have changed in recent specs and
    Firefox and Chrome both now encode them differently (now using
    percent-encoding) than way back (for at least Firefox this is a recent
-   change, that happened somewhere between verion 88 and 92). curl still
+   change, that happened somewhere between version 88 and 92). curl still
    encodes the names using "the old" way (using a backslash method). The
    correct course of action for this is not easy to tell as of this moment, as
    server-side receivers certainly will now have to deal with both encoding
