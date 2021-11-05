@@ -16,7 +16,7 @@
 - I did an internal presentation about libcurl and
   [tiny-curl](https://curl.se/tiny/) for wolfSSL colleagues.
   
-- We celebrated `curl.se` (the domain) having been in used for a year
+- We celebrated `curl.se` (the domain) having been in use for a year
   now. Wohoo!
 
 - I started looking at using nghttpx as a proxy for some first HTTP/3 tests in
