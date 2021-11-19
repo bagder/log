@@ -42,8 +42,8 @@
   participations](https://daniel.haxx.se/podcasts.html)
 
 - I've worked on cleaning up and overhauling [everything
-  curl](https://everything.curl.dev/) quite a bit this week. Trigged mostly by
-  me browsing it and I found a few outdated details. Added a few sections,
+  curl](https://everything.curl.dev/) quite a bit this week. Triggered mostly
+  by me browsing it and I found a few outdated details. Added a few sections,
   refreshed some and restructed a few others. I have more ideas of areas I
   could go over to improve a bit more soon as well. The book is now at 75,000
   words. I'm missing a good "get libcurl for Windows" section so I asked about
