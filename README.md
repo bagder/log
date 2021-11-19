@@ -1,5 +1,95 @@
 # Daniel's weekly report
 
+# November 19, 2021
+
+## Happened this week
+
+- Opened the [feature window for
+  curl](https://curl.se/dev/feature-window.html) on Monday. Started merging
+  things that have been queued up...
+
+- I reached 16,000 commits in curl's source code repo just after I posted my
+  weekly report last week.
+
+- I signed up to participate in the panel at the free online event coming on
+  December 14 called [The Future of Open Source: Is It
+  Sustainable?](https://sentry.io/resources/the-future-of-open-source-is-it-sustainable/)
+  by [Sentry](https://sentry.io/)!
+
+- Tuesday: I did a curl presentation - in person - for a Stockholm based
+  company. Even managed to cram in some HTTP/3 details and had a good time
+  with a range of good and intersting questions and follow-up discussions. The
+  best kind of event!
+
+- While working on the slides for my webinar this week (which I had postponed
+  for far too long this time), I had libreoffice crash on me repeatedly so
+  many times I finally gave up on it. For good. I've created all my
+  presentations in libreoffice for many years, but with this last streak of
+  hard crashes I'm now done. It has always been "crashy", but with some recent
+  update it became totally unusable for me. Fortunately, exporting from
+  libreoffice into powerpoint and importing into Google slides worked pretty
+  good so I at least didn't have to redo all the work.
+
+- Thursday: I did a curl webinar, on [the release and post
+  quantum](https://daniel.haxx.se/blog/2021/11/16/curl-release-webinar-featuring-post-quantum-curl/) -
+  the video recording has not yet come online but I will update the blog post
+  with it as soon as it does.
+
+- Participated on a podcast recording Thursday. We talked curl details and
+  experiences in a way I think I haven't talked too much before. For example
+  *"Why do you think HTTP is a complex protocol?"*.  I'll let you know when it
+  becomes available for listening. [older podcast
+  participations](https://daniel.haxx.se/podcasts.html)
+
+- I've worked on cleaning up and overhauling [everything
+  curl](https://everything.curl.dev/) quite a bit this week. Trigged mostly by
+  me browsing it and I found a few outdated details. Added a few sections,
+  refreshed some and restructed a few others. I have more ideas of areas I
+  could go over to improve a bit more soon as well. The book is now at 75,000
+  words. I'm missing a good "get libcurl for Windows" section so I asked about
+  suggestions for it [on the mailing
+  list](https://curl.se/mail/lib-2021-11/0037.html).
+
+- I want to offer the regular curl [man
+  page](https://curl.se/docs/manpage.html) on the webpage in an additinal
+  alternate way: with each command line option in its own invidual webpage. [I
+  posted to curl-users](https://curl.se/mail/archive-2021-11/0004.html) asking
+  for feedback with two sample images showing what it could look like. Didn't
+  get very productive responses so far...
+
+- This week in curl+hyper land, I've looked at test cases that use HTTP
+  trailers (for example [test
+  1417](https://github.com/curl/curl/blob/master/tests/data/test1417)). I
+  found no support in the current hyper API for them so I've submitted a
+  [feature-request](https://github.com/hyperium/hyper/issues/2699). I also
+  fixed haproxyprotocol suppport.
+
+- I did some preliminary attempts to build nghttpx with HTTP/3 support but ran
+  into build problems I haven't yet resolved.
+
+## Blog posts
+
+- [16000 curl commits](https://daniel.haxx.se/blog/2021/11/12/16000-curl-commmits/)
+- [Fun multipart/form-data inconsistencies](https://daniel.haxx.se/blog/2021/11/13/fun-multipart-form-data-inconsistencies/)
+- [cURL Release Webinar – Featuring Post Quantum cURL](https://daniel.haxx.se/blog/2021/11/16/curl-release-webinar-featuring-post-quantum-curl/)
+- [Free Apple support](https://daniel.haxx.se/blog/2021/11/18/free-apple-support/)
+
+## Coming up
+
+- check what more hyper features that are lacking for remaining test cases and
+  submit feature-reuqests for them
+- make nghttpx work for HTTP/3 and create a first set of HTTP/3 tests for curl
+
+## Advertisment
+
+- Buy [curl support](https://curl.se/support.html) from me via wolfSSL!
+  Offloads your engineers to do other things and leaves the curl work to the
+  experts. Win-win.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # November 12, 2021
 
 ## Happened this week
