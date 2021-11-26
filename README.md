@@ -53,7 +53,7 @@
   I've so far failed to understand it. And I can't run or reproduce the
   problem on my own.
 
-- I made editing the website simply by making sure we can run a local copy
+- I made editing the website simpler by making sure we can run a local copy
   under the name `curl.local`. See that
   [README.md](https://github.com/curl/curl-www/blob/master/README.md) for
   details. I also added a first basic CI job for the website to maybe reduce
