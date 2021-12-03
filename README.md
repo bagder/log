@@ -44,22 +44,29 @@
  
  Wednesday morning I restored the mailman2 configs for the web-server, fixed
  postfix to again work with it and tweaked my docker configs to use the new
- paths on my machine, test the new config a tittle and then... at **10:03:03**
- Wednesday morning I could **finally** [send a mail to the
+ paths on my machine, tested the new config a tittle and then... at
+ **10:03:03** Wednesday morning I could **finally** [send a mail to the
  curl-library](https://curl.se/mail/lib-2021-12/0000.html) informing everyone
  about the 46 hour glitch we just experienced. The lists were back up. On
  mailman2. I learned something. I think.
  
  Sticking to mailman2 might not be a solid long-term solution but at least
- things are now working again and I have time and opportunity to now consider
- my future options in a more relaxed and planned-ahead way.
+ things are now working again and I have time and opportunity to consider my
+ future options in a more relaxed and planned-ahead way.
+
+- I was contacted by a potential customer asking about the feasability of
+  porting libcurl to offer FTP and SFTP powers on 16 bit CPU with 16K RAM...
+  libcurl is not currently ported to 16 bit, and getting a general purpose FTP
+  client into 16K is probably hard. Getting SFTP into the mix as well I deem
+  is completely impossible.
 
 - Found myself listed as the [5th most followed GitHub user in
   Sweden](https://github.com/gayanvoice/top-github-users/blob/main/markdown/followers/sweden.md)
 
 - Talked open source supply chain security and sustainability with a
-  journalist. How come something that is done by a small distributed team with
-  very little funding can be end up used by virtually everything and everyone?
+  journalist. How come something that is made by a small distributed team with
+  very little funding can end up getting used by virtually everything and
+  everyone?
 
 - Attended the 2021 Polhem Prize award ceremony, [looking like
   this](https://twitter.com/bagder/status/1466430742813106188). Conversations
