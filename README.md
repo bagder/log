@@ -13,7 +13,7 @@
  This lax attitude of mine to a system upgrade, of course immediately hit me
  in the face when it dawned upon me that in **Debian 11** they no longer ship
  Python 2 and as direct side-effect of this: *mailman 2 is no longer provided*
- as a package, I believe because it is still only support with Python 2. Our
+ as a package, I believe because it is still only supported with Python 2. Our
  mailing list server on [lists.haxx.se](https://lists.haxx.se) run sixteen
  public mailing lists and a few private ones, and in this single careless
  upgrade they were all suddenly out of order.
