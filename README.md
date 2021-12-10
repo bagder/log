@@ -1,5 +1,73 @@
 # Daniel's weekly report
 
+# December 10, 2021
+
+## Happened this week
+
+- Bonus points this week goes to Brad who toyed with running a server on TCP
+  port zero and discovered that curl didn't support connecting to it! Extra
+  embarrassing for me since I wrote blog post about exactly that feature years
+  ago: [Pretending port zero is a normal
+  one](https://daniel.haxx.se/blog/2014/10/25/pretending-port-zero-is-a-normal-one/).
+  Luckily, the fix was very easy and order will be restored in the next curl
+  release!
+  
+- I expanded [everything curl](https://everything.curl.dev/) with several
+  hundred lines of new content and I worked on splitting up some of the overly
+  large pages into many smaller ones. All in an effort to make it easier to
+  read and make better "landing pages" for different topics. Right now, I'm
+  down to just 12 section left "TBD" and a total of more 77,600 words written,
+  using 667 section titles in 214 separate markdown files. I also passed 1,000
+  commits in the [git repo](https://github.com/bagder/everything-curl) this
+  week.
+  
+- I managed to get 6 more test cases work with a hyper-powered build, now down
+  to **26 disabled tests**. There are still more work for me to fix in there
+  and we also need hyper to offer new APIs for some of them, most notably
+  support for trailers.
+  
+- This week's hardest bug-fix was probably [multi: cleanup the socket hash
+  when destroying it](https://github.com/curl/curl/pull/8131). Another win for
+  "torture testing" (making resource allocating functions fail on purpose) but
+  for some reason I could only ever reproduce the fail on mac and it took me a
+  few hours to get to the bottom of it and make a clean fix.
+  
+- The possibly most unexpected side-effect of me spending a few hours staring
+  at curl code using hash tables, was me converting the internal hash API to
+  [lazy-initializing parts of it](https://github.com/curl/curl/pull/8132). Not
+  only is the patch a negative line delta, it also removes a few allocs from
+  my plain "malloc counter" test. Downloading a huge static file over HTTP now
+  uses 91 allocations compared to 94 before. (The exact count will of course
+  depend on build conditions; YMMV).
+
+- The curl feature freeze went in effect this Wednesday. See also our [release
+  cycle
+  explained](https://curl.se/dev/release-procedure.html#release-cycle). The
+  pending release is due on January 5, 2022. You can always find the pending
+  RELEASE-NOTES for the coming version here:
+  [https://curl.se/dev/release-notes.html](https://curl.se/dev/release-notes.html).
+
+## Blog posts
+
+- [No easter eggs in
+  curl](https://daniel.haxx.se/blog/2021/12/06/no-easter-eggs-in-curl/). 150+
+  comments on [hacker news](https://news.ycombinator.com/item?id=29460313) and
+  50+ on
+  [reddit](https://www.reddit.com/r/programming/comments/racp85/there_are_no_easter_eggs_in_curl/).
+
+## Coming up
+
+- fix more tests to work with hyper
+- I'm participating in a panel discussion titled [The Future of Open Source:
+  Is It
+  Sustainable?](https://sentry.io/resources/the-future-of-open-source-is-it-sustainable/?utm_medium=partner&utm_source=curl&utm_campaign=event-open-source-2021)
+  on Tuesday the 14th of December. Sign up to attend this free event organized
+  by **Sentry**.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # December 3, 2021
 
 ## Happened this week
