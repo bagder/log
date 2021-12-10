@@ -52,9 +52,9 @@
 
 - [No easter eggs in
   curl](https://daniel.haxx.se/blog/2021/12/06/no-easter-eggs-in-curl/). 150+
-  comments on [hacker news](https://news.ycombinator.com/item?id=29460313) and
+  comments on [hacker news](https://news.ycombinator.com/item?id=29460313),
   50+ on
-  [reddit](https://www.reddit.com/r/programming/comments/racp85/there_are_no_easter_eggs_in_curl/).
+  [reddit](https://www.reddit.com/r/programming/comments/racp85/there_are_no_easter_eggs_in_curl/) and 40+ on [lobste.rs](https://lobste.rs/s/ihmauf/no_easter_eggs_curl).
 
 ## Coming up
 
