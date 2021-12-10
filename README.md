@@ -8,23 +8,24 @@
   port zero and discovered that curl didn't support connecting to it! Extra
   embarrassing for me since I wrote blog post about exactly that feature years
   ago: [Pretending port zero is a normal
-  one](https://daniel.haxx.se/blog/2014/10/25/pretending-port-zero-is-a-normal-one/).
-  Luckily, the fix was very easy and order will be restored in the next curl
-  release!
+  one](https://daniel.haxx.se/blog/2014/10/25/pretending-port-zero-is-a-normal-one/)
+  so obviously this was a regression! Luckily, the fix was very easy and
+  order will be restored in the next curl release!
   
 - I expanded [everything curl](https://everything.curl.dev/) with several
-  hundred lines of new content and I worked on splitting up some of the overly
-  large pages into many smaller ones. All in an effort to make it easier to
+  hundred lines of new content and I worked on splitting up some of the
+  largest pages into many smaller ones. All in an effort to make it easier to
   read and make better "landing pages" for different topics. Right now, I'm
-  down to just 12 section left "TBD" and a total of more 77,600 words written,
-  using 667 section titles in 214 separate markdown files. I also passed 1,000
-  commits in the [git repo](https://github.com/bagder/everything-curl) this
-  week.
+  down to just 12 sections left marked "TBD" and a total of more 77,600 words
+  written, using 667 section titles in 214 separate markdown files. I also
+  passed 1,000 commits in the [git
+  repo](https://github.com/bagder/everything-curl) this week. Don't forget to
+  let me know when you find curl concepts not currently covered in the book!
   
 - I managed to get 6 more test cases work with a hyper-powered build, now down
-  to **26 disabled tests**. There are still more work for me to fix in there
-  and we also need hyper to offer new APIs for some of them, most notably
-  support for trailers.
+  to **26 disabled tests** to go. There are still more work for me to fix in
+  there and we also need hyper to offer new APIs for some of them, most
+  notably support for trailers.
   
 - This week's hardest bug-fix was probably [multi: cleanup the socket hash
   when destroying it](https://github.com/curl/curl/pull/8131). Another win for
