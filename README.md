@@ -1,5 +1,65 @@
 # Daniel's weekly report
 
+# December 17, 2021
+
+## Happened this week
+
+- On Tuesday I participated in the Sentry panel discussion on Open Source
+  sustainability. Summed up by Chad on their blog post here: [Yes, Open Source
+  Is
+  Sustainable](https://blog.sentry.io/2021/12/16/yes-open-source-is-sustainable).
+  The event was fun and interesting. I think it showed that there are
+  different takes on how to get paid and get an Open Source career. Possibly
+  we were too many panelists to fit in just an hour.
+
+- I (quite calmly) celebrated removing **the final** "TBD" markup in
+  [everything curl](https://everything.curl.dev/)! All since I started the
+  book in September 2015, I've added chapters and sections with titles I've
+  thought *should* be in there and then just written "TBD" until I got time
+  and inspiration enough to fill in the content. Six years and three months
+  later, there is no longer any such markers in the book! It doesn't
+  necessarily mean that we cover all we should, just that I/we haven't thought
+  of any more sections that I haven't also populated (yet).
+
+- I expanded everything curl further this week (at over 1,000 commits, 12,000
+  lines and 81,000 words now). For example I spent some time on elaborating
+  more in the [libcurl internals](https://everything.curl.dev/internals)
+  section even with a few new explanatory images. If you are interested in
+  learning more about how curl works under the hood, I will appreciate your
+  feedback once you've read that part.
+
+- I added a few CI jobs for everything curl to make sure the quality of the
+  writing and output stays decent: proselint (that checks basic English) and
+  markdown links checker are the two first. Right now we're discussing which
+  consistent spelling to use for a few words. I put up [a twitter
+  poll](https://twitter.com/bagder/status/1471748144538992643) for the
+  important question "email" or "e-mail"?
+
+- Had a second meeting with company **[redacted]** (doing medical devices)
+  about porting and providing tiny-curl for the RTOS **[redacted]**. Sounds
+  positive and definitely something we can do and I sincerely think curl will
+  make their products better than sticking to their RTOS provider's half-
+  baked solutions.
+
+- The curl source code repo passed 28,000 commits.
+
+- I was referred to as ["a Swede working in a house in
+  Huddinge"](https://twitter.com/bagder/status/1470465381815005189) in
+  Sweden's biggest newspaper Dagens Nyheter in an article about the log4j flaw
+  and open source code used by "everyone".
+
+## Blog posts
+
+- [Keeping curl safe](https://daniel.haxx.se/blog/2021/12/13/keeping-curl-safe/)
+
+## Coming up
+
+- fix tests to work with hyper
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # December 10, 2021
 
 ## Happened this week
@@ -11,7 +71,7 @@
   one](https://daniel.haxx.se/blog/2014/10/25/pretending-port-zero-is-a-normal-one/)
   so obviously this was a regression! Luckily, the fix was very easy and
   order will be restored in the next curl release!
-  
+
 - I expanded [everything curl](https://everything.curl.dev/) with several
   hundred lines of new content and I worked on splitting up some of the
   largest pages into many smaller ones. All in an effort to make it easier to
@@ -21,18 +81,18 @@
   passed 1,000 commits in the [git
   repo](https://github.com/bagder/everything-curl) this week. Don't forget to
   let me know when you find curl concepts not currently covered in the book!
-  
+
 - I managed to get 6 more test cases work with a hyper-powered build, now down
   to **26 disabled tests** to go. There are still more work for me to fix in
   there and we also need hyper to offer new APIs for some of them, most
   notably support for trailers.
-  
+
 - This week's hardest bug-fix was probably [multi: cleanup the socket hash
   when destroying it](https://github.com/curl/curl/pull/8131). Another win for
   "torture testing" (making resource allocating functions fail on purpose) but
   for some reason I could only ever reproduce the fail on mac and it took me a
   few hours to get to the bottom of it and make a clean fix.
-  
+
 - The possibly most unexpected side-effect of me spending a few hours staring
   at curl code using hash tables, was me converting the internal hash API to
   [lazy-initializing parts of it](https://github.com/curl/curl/pull/8132). Not
@@ -78,7 +138,7 @@
  many mailing lists and a range of other services needed an upgrade. It runs
  Debian and we took the plunge and upgraded it to Debian 11. Just like that,
  on a Monday.
- 
+
  This lax attitude of mine to a system upgrade, of course immediately hit me
  in the face when it dawned upon me that in **Debian 11** they no longer ship
  Python 2 and as direct side-effect of this: *mailman 2 is no longer provided*
@@ -86,7 +146,7 @@
  mailing list server on [lists.haxx.se](https://lists.haxx.se) run sixteen
  public mailing lists and a few private ones, and in this single careless
  upgrade they were all suddenly out of order.
- 
+
  Debian 11 instead provides mailman 3. This is not just a typical upgrade from
  version 2 but is rather a fairly big and different take on mailing lists.
  Documentation might even make you believe that you can more or less
@@ -97,7 +157,7 @@
  scripts, modified server configs and configured the new services. I struggled
  with this during the rest of the Monday until late in the evening. By
  midnight I stopped and went to bed.
- 
+
  Very annoyed over my troubles and over a (django) web server that runs and
  logs an error by dumping an entire python stack trace in the log file saying
  "can't find the database" but leaving out the only really interesting and
@@ -105,12 +165,12 @@
  Tuesday on casually trying more things to get mailman3 up while other work
  needed some attention and I started to reconsider my options and how I should
  proceed to get the lists back up.
- 
+
  Late Tuesday afternoon I decided to backpedal to at least get something up
  and working again sooner rather than later and the mailman3 config really
  made me lose my temper I felt as if I was going nowhere with it. I instead
  built Python2, mailman2 and pip (for python2) etc from source.
- 
+
  Wednesday morning I restored the mailman2 configs for the web-server, fixed
  postfix to again work with it and tweaked my docker configs to use the new
  paths on my machine, tested the new config a tittle and then... at
@@ -118,7 +178,7 @@
  curl-library](https://curl.se/mail/lib-2021-12/0000.html) informing everyone
  about the 46 hour glitch we just experienced. The lists were back up. On
  mailman2. I learned something. I think.
- 
+
  Sticking to mailman2 might not be a solid long-term solution but at least
  things are now working again and I have time and opportunity to consider my
  future options in a more relaxed and planned-ahead way.
