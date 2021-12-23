@@ -4,6 +4,49 @@
 
 ## Happened this week
 
+- Got back into playing with HTTP/3. Wrote up a description on how to [Setup a
+  local HTTP/3 test server to toy
+  with](https://gist.github.com/bagder/fe1f5ef823bc3314474725a6cf1f1205). A
+  version of that was also added to the official [curl HTTP/3
+  docs](https://curl.se/docs/http3.html#http3-test-server). When there, I
+  filed the bug [curl with HTTP/3 silently ignores certificate
+  problems](https://github.com/curl/curl/issues/8173) and I've worked on
+  fixing this rather bad oversight. We also have the [list of known HTTP3
+  bugs](https://curl.se/docs/knownbugs.html#HTTP3) to keep me busy a while
+  forward.
+  
+- I ran a poll on Twitter on how to spell the word: [e-mail or
+  email](https://twitter.com/bagder/status/1471748144538992643). Spoiler:
+  email won by quite a large margin. Now both everything curl and the curl
+  source code repo have been updated accordingly.
+  
+- OpenSSF graciously [donated hardware MFA tokens to the curl
+  project](https://github.com/curl/curl/issues/8093).
+
+- I added a new graph to the dashboard: [bug bounty
+  rewards](https://curl.se/dashboard1.html#bugbounty-amounts), showing each
+  reward amount with its on bar and a plotted line with the average of 5
+  rewards. It reveals very clearly that the reward amount has gradually
+  increased over time and the recent average is over 1,000 USD per reported
+  security problem.
+
+## Blog posts
+
+- [The curl year 2021](https://daniel.haxx.se/blog/2021/12/21/the-curl-year-2021/)
+
+## Coming up
+
+- improve the HTTP/3 support
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
+# December 17, 2021
+
+## Happened this week
+
 - On Tuesday I participated in the Sentry panel discussion on Open Source
   sustainability. Summed up by Chad on their blog post here: [Yes, Open Source
   Is
