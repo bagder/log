@@ -1,6 +1,6 @@
 # Daniel's weekly report
 
-# December 17, 2021
+# December 23, 2021
 
 ## Happened this week
 
