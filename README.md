@@ -29,6 +29,8 @@
   rewards. It reveals very clearly that the reward amount has gradually
   increased over time and the recent average is over 1,000 USD per reported
   security problem.
+  
+- In Sweden we celebrate Christmas on December 24.
 
 ## Blog posts
 
