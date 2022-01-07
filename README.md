@@ -59,7 +59,7 @@
 ~~~shell
 #!/bin/sh
 cd /home/daniel/src/curl
-files=$(git df origin/master --name-only)
+files=$(git diff origin/master --name-only)
 if test -n "$files"; then
     ./scripts/copyright.pl $files
     res=$?
