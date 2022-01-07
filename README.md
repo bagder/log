@@ -24,7 +24,7 @@
   paying customers/companies of mine can affect this. Get in touch!
   
 - Almost every single downstream curl packager has its own set of custom
-  patches applied. Many of those changes are just patches that affects
+  patches applied. Many of those changes are just patches that affect
   particular details in the build and are not details we would like to modify
   in the project's upstream code. After I did a closer inspection of the
   patches used by Debian, FreeBSD and msys it is also clear that there are
