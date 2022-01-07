@@ -4,11 +4,11 @@
 
 ## Happened this week
 
-- Because I had some time off during xmas I didn't do any weekly report last
+- Because I had some time off during Xmas I didn't do any weekly report last
   week and therefore this edition might include stuff I did last week when I
   was supposed to not do much.
   
-- On January 5 we released curl 7.81.0, and I got to be the release shepard
+- On January 5 we released curl 7.81.0, and I got to be the release shepherd
   for the 205th curl release ever. There have been some issues reported on
   this version, in particular some annoying build related quirks, but so far
   none of them have been deemed serious enough to warrant any follow-up patch
@@ -19,7 +19,7 @@
   lists as well as [on
   Twitter](https://twitter.com/bagder/status/1479216791998058498) in order to
   listen in on what people are thinking about and want for curl these days. I
-  hope to put togeter a 2022 roadmap that at least outlines what **I** plan to
+  hope to put together a 2022 roadmap that at least outlines what **I** plan to
   work on for curl this year. It is also intended to highlight the fact that
   paying customers/companies of mine can affect this. Get in touch!
   
@@ -78,7 +78,7 @@ make -sj7
 
 ## Coming up
 
-- The curl feature window opens on Monday the 10th. There are plent of pull-
+- The curl feature window opens on Monday the 10th. There are plenty of pull-
   requests already waiting to get merged once that happens.
 - There will be a report published on newly discovered URL problems. The
   report comes from people at Snyk and Claroty but I've read it and given it
