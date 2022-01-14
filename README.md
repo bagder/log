@@ -1,6 +1,6 @@
 # Daniel's weekly report
 
-# January 14, 2021
+# January 14, 2022
 
 ## Happened this week
 
@@ -77,7 +77,7 @@
 [Comment here](https://github.com/bagder/log/discussions)
 
 
-# January 7, 2021
+# January 7, 2022
 
 ## Happened this week
 
