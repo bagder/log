@@ -13,7 +13,7 @@
   confusion](https://security.claroty.com/URLparserconfusion) that I have I
   mentioned before went public on Monday. It discusses problems and
   inconsistencies among URL parsers that can lead to vulnerabilities. I also
-  joiend Snyk's [live stream](https://www.twitch.tv/videos/1260182192) and
+  joined Snyk's [live stream](https://www.twitch.tv/videos/1260182192) and
   talked about the report and the topic. I also wrote a separate blog post
   about it, see below.
 
@@ -165,7 +165,7 @@ make -sj7
   [Twitch](https://www.twitch.tv/snyklive) where I will participate.
 - I will continue to improve the HTTP/3 support. I want to get to fixing [cert
   verification for curl +
-  quiche](https://github.com/curl/curl/issues/8173). If out friends in the
+  quiche](https://github.com/curl/curl/issues/8173). If our friends in the
   quiche project delivers, this might be a fine topic for me to also do a
   live-streamed session with. Follow me on
   [Twitter](https://twitter.com/bagder) or
