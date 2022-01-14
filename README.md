@@ -4,6 +4,83 @@
 
 ## Happened this week
 
+- The curl [feature window](https://curl.se/dev/feature-window.html) is now
+  open and we've started to merge outstanding pull-requests for new features.
+  This also means that the next curl release is now going to be called
+  **7.82.0**.
+
+- The report on [URL parser
+  confusion](https://security.claroty.com/URLparserconfusion) that I have I
+  mentioned before went public on Monday. It discusses problems and
+  inconsistencies among URL parsers that can lead to vulnerabilities. I also
+  joiend Snyk's [live stream](https://www.twitch.tv/videos/1260182192) and
+  talked about the report and the topic. I also wrote a separate blog post
+  about it, see below.
+
+- Microsoft took a big step forward this week and shipped an upgrade to curl
+  for Windows. They had stalled on version 7.55.1 for years and now they took
+  a giant leap in one go straight up to **7.79.1**. Dustin Howett said they
+  intend to [keep up-to-date
+  better](https://twitter.com/DHowett/status/1481302347552862211) going
+  forward.
+  
+- In Microsoft's [upgrade
+  note](https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2021-22947),
+  they specifically highlight that they've addressed
+  [CVE-2021-22947](https://curl.se/docs/CVE-2021-22947.html) but they also
+  confusingly call that problem a "Remote Code Execution Vulnerability" -
+  which it isn't. After some back-channel talk, it has been explained that
+  they fixed a whole range of problems with that upgrade and it includes one
+  RCE. This seems reasonable, as we list quite a few [known vulnerabilities in
+  7.55.1](https://curl.se/docs/vuln-7.55.1.html). **35** to be exact.
+
+- At wolfSSL we have started the year by internally discussing **the curl 2022
+  Roadmap** or more specifically what I will work on in curl this year. I took
+  the subject to the mailing lists and I also got a lot of feedback on my
+  Twitter question for [lessons from curl
+  alternatives](https://twitter.com/bagder/status/1481186883560476674). We are
+  going to customers starting next week and I will most likely do a webinar on
+  the topic maybe early February.
+
+- I did an internal curl presentation at [wolfSSL](https://www.wolfssl.com/)
+  since we have quite a few new faces at the company over the last
+  year. What's curl, what does it do, existing customers, how do we (want to)
+  sell curl and something about the possible roadmap 2022. In the big wolfSSL
+  family of libraries and products, curl is certainly the little brother
+  business-wise. Room to grow.
+
+- Our friends in the [quiche project](https://github.com/cloudflare/quiche)
+  [landed a changed](https://github.com/cloudflare/quiche/pull/1122) that
+  brought the `quiche_conn_peer_cert()` function that would allow us to verify
+  the server certificate when doing QUIC connections (for HTTP/3) with this
+  library. Ironically though, it still turned out inadequate for curl's
+  purposes and we instead took [a different
+  route](https://github.com/curl/curl/pull/8275) when Alessandro Ghedini
+  stepped up and took us a lot closer to the goal. Without using that new
+  function.
+
+- Vaxxed v3.
+
+## Blog posts
+
+- [Don’t mix URL parsers](https://daniel.haxx.se/blog/2022/01/10/dont-mix-url-parsers/)
+
+## Coming up
+
+- More PR review and merging.
+- A libssh2 release is due and it might happen this coming week
+- curl roadmap 2022
+- A blog post around [the OSS pyramid](https://twitter.com/bagder/status/1481938497728569345)
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
+# January 7, 2021
+
+## Happened this week
+
 - Because I had some time off during Xmas I didn't do any weekly report last
   week and therefore this edition might include stuff I did last week when I
   was supposed to not do much.
