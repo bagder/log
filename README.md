@@ -4,11 +4,10 @@
 
 ## Happened this week
 
-- It was been pointed out to me that the look if this log is not very
-  iOS/phone friendly, which disappointed me. It is just a default GitHub theme
-  and I thought they assured that... I haven't changed theme yet since I don't
-  know which are good if any, so I haven't decided on how to go forward with
-  that.
+- It was pointed out to me that the look if this log is not very phone
+  friendly, which disappointed me. It is just a default GitHub theme and I
+  thought they assured that... I haven't changed theme yet since I don't know
+  which are good if any, so I haven't decided on how to go forward with that.
 
 - Feedback is tricky. Thursday afternoon my time I posted an [email to the
   curl-users](https://curl.se/mail/archive-2022-01/0043.html) mailing list and
@@ -38,28 +37,33 @@
 - A tsunami of web traffic on the curl site apparently started just before
   Jan 16. I have no idea what this is since I don't log anything. Fastly just
   deals with it for us right now, but if the pattern sticks going forward I
-  will need to investigate.
+  will need to investigate. (The image below is from the Fastly control
+  panel. The Y axis and the averages, are amounts per hour. The X axis is the
+  last week.)
 ![A web traffic tsunami](web-tsunami.png)
 
-- I posted by blog post called [Enforcing the
+- I posted my blog post called [Enforcing the
   pyramid](https://daniel.haxx.se/blog/2022/01/17/enforcing-the-pyramid-of-open-source/)
-  explaining a little why it is hard to fix the problem quality and occasional
-  security issues appearing in small but widely used open source projects. I
-  think often the real reasons for the problems are ignored and people mostly
-  repeat "lack of funding". It might also be a lack of funding, but the
-  problem is also *where* funding should go and *how* to manage that funding
-  to actually enforce software components others rely on.
+  explaining a little why it is hard to fix the problem of low quality and
+  occasional security issues appearing in small but widely used open source
+  projects. I think often the real reasons for the problems are ignored and
+  people mostly repeat "lack of funding". It might still be a lack of funding,
+  but the problem is also *where* funding should go and *how* to manage that
+  funding to actually enforce the software components others rely
+  on. Everyone's good intention are unfortunately not going to change a lot I
+  think, for pure economic reasons: companies make a lot of money this way.
 
-- I discovered that curl still had source code left adjusted for Watcom
-  compilers, even after we removed the support for building with this dead
-  compiler well over a year ago so I went through and cleaned up. It made me
-  also realize that BeOS also had similar traces and I subsequently removed
-  those as well. Less code is good. Especially when the removed code is never
-  used anyway! Inspired by having found leftovers for these two legacy systems
-  I wrote up a script that collects and analyzes all defines used in `#if` and
-  `#ifdef` lines in the product code in an effort to find more to clean off.
-  [The result](https://curl.se/mail/lib-2022-01/0048.html) shows that we use
-  no less than 1,154 (!) different symbols in such lines...
+- I discovered that curl still had source code left for Watcom compilers, even
+  after we removed the support for building with this dead compiler well over
+  a year ago so I went through and cleaned up. It made me realize that BeOS
+  also had similar traces and I subsequently removed those as well. Less code
+  is good. Especially when the removed code is never used anyway!  Inspired by
+  having found leftovers for these two legacy systems I wrote up a script that
+  collects and analyzes all defines used in `#if` and `#ifdef` lines in the
+  product code in an effort to find more to clean off.  [The
+  result](https://curl.se/mail/lib-2022-01/0048.html) shows that we use no
+  less than 1,154 (!) different symbols in such lines, but I didn't find any
+  more equally obvious targets to clean up...
 
 ## Blog posts
 
