@@ -1,5 +1,84 @@
 # Daniel's weekly report
 
+# January 21, 2022
+
+## Happened this week
+
+- It was been pointed out to me that the look if this log is not very
+  iOS/phone friendly, which disappointed me. It is just a default GitHub theme
+  and I thought they assured that... I haven't changed theme yet since I don't
+  know which are good if any, so I haven't decided on how to go forward with
+  that.
+
+- Feedback is tricky. Thursday afternoon my time I posted an [email to the
+  curl-users](https://curl.se/mail/archive-2022-01/0043.html) mailing list and
+  almost in parallel I [asked people on
+  Twitter](https://twitter.com/bagder/status/1484158794246639617) the same
+  question: Is it time to add some JSON aware support to the curl tool? It
+  took off immediately on
+  [hackernews](https://news.ycombinator.com/item?id=30011382) and
+  [reddit](https://www.reddit.com/r/programming/comments/s8puao/curl_to_add_native_json_support/)
+  and the apparently intense interest made me also create a separate [GitHub
+  discussion](https://github.com/curl/curl/discussions/8312) for it. Then
+  what? It smells of the good old bike shed problem: everyone can easily have
+  an opinion on the matter. 1/3 are completely against the idea (layer
+  violation, feature creep etc), 1/3 immediately pointed out numerous other
+  things that apparently also **must** be supported for this to work and 1/3
+  seemed to mostly agree but ... different tweaks. So yes, much more and
+  thorough feedback than I am used to, but also so disparate and wide-ranging
+  that it is really hard to maneuver through. My plan it to take it slowly,
+  move forward with baby steps, go where I get the least amount of complaints
+  and see where it takes us.
+
+- On the [Security Now podcast episode
+  853](https://twit.tv/shows/security-now/episodes/853) (starting about one
+  hour in), the host Steve Gibson talks about last week's URL confusion
+  vulnerability research paper
+
+- A tsunami of web traffic on the curl site apparently started just before
+  Jan 16. I have no idea what this is since I don't log anything. Fastly just
+  deals with it for us right now, but if the pattern sticks going forward I
+  will need to investigate.
+[![A web traffic tsunami](https://pbs.twimg.com/media/FJikgTOXIAYnMwq?format=jpg&name=large)]
+
+- I posted by blog post called [Enforcing the
+  pyramid](https://daniel.haxx.se/blog/2022/01/17/enforcing-the-pyramid-of-open-source/)
+  explaining a little why it is hard to fix the problem quality and occasional
+  security issues appearing in small but widely used open source projects. I
+  think often the real reasons for the problems are ignored and people mostly
+  repeat "lack of funding". It might also be a lack of funding, but the
+  problem is also *where* funding should go and *how* to manage that funding
+  to actually enforce software components others rely on.
+
+- I discovered that curl still had source code left adjusted for Watcom
+  compilers, even after we removed the support for building with this dead
+  compiler well over a year ago so I went through and cleaned up. It made me
+  also realize that BeOS also had similar traces and I subsequently removed
+  those as well. Less code is good. Especially when the removed code is never
+  used anyway! Inspired by having found leftovers for these two legacy systems
+  I wrote up a script that collects and analyzes all defines used in `#if` and
+  `#ifdef` lines in the product code in an effort to find more to clean off.
+  [The result](https://curl.se/mail/lib-2022-01/0048.html) shows that we use
+  no less than 1,154 (!) different symbols in such lines...
+
+## Blog posts
+
+- [Enforcing the pyramid](https://daniel.haxx.se/blog/2022/01/17/enforcing-the-pyramid-of-open-source/)
+
+## Coming up
+
+- More curl roadmap 2022 thoughts
+- json thoughts
+- A header API proposal for libcurl
+- I'll do an online presentation called [curl with
+  rust](https://www.meetup.com/Rust-Linz/events/283116945/) for the Rust Linz
+  Meetup on Thursday January 27th.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # January 14, 2022
 
 ## Happened this week
