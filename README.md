@@ -39,7 +39,7 @@
   Jan 16. I have no idea what this is since I don't log anything. Fastly just
   deals with it for us right now, but if the pattern sticks going forward I
   will need to investigate.
-[![A web traffic tsunami](https://pbs.twimg.com/media/FJikgTOXIAYnMwq?format=jpg&name=large)]
+![A web traffic tsunami](web-tsunami.png)
 
 - I posted by blog post called [Enforcing the
   pyramid](https://daniel.haxx.se/blog/2022/01/17/enforcing-the-pyramid-of-open-source/)
