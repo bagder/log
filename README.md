@@ -72,7 +72,7 @@
 ## Coming up
 
 - More curl roadmap 2022 thoughts
-- json thoughts
+- More json thoughts and maybe code
 - A header API proposal for libcurl
 - I'll do an online presentation called [curl with
   rust](https://www.meetup.com/Rust-Linz/events/283116945/) for the Rust Linz
