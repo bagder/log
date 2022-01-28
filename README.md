@@ -1,5 +1,76 @@
 # Daniel's weekly report
 
+# January 28, 2022
+
+## Happened this week
+
+- The
+  [email](https://daniel.haxx.se/blog/2022/01/24/logj4-security-inquiry-response-required/)
+  I received, tweeted about and finally blogged about got some serious
+  attention which distracted me somewhat in the start of the week. I tried to
+  get a conversation going with them but I seem to have failed. The company
+  name behind my blacked out fields in the published emails is **MetLife**.
+
+- The most likely never-ending troubles with host names ending with a trailing
+  dot got another episode this week when I landed [a change in
+  curl](https://github.com/curl/curl/pull/8320) that partly reverts a change
+  done almost eight years ago which should make curl now handle these names
+  more aligned with how current browsers use them. There is no doubt in my
+  mind that we will have reasons to revisit this topic again in the future.
+  Hopefully it will take another eight years before we do.
+
+- I've written an initial version of [support for
+  --json](https://github.com/curl/curl/pull/8314), and I think I'm going to
+  land this for inclusion already in the next curl release. The
+  [discussion](https://github.com/curl/curl/discussions/8312) is still going
+  on for the more advanced functionality to actually create JSON, and I
+  haven't yet decided on what I think about it or exactly how that is going to
+  play out. I think we need more time to work on that and maybe write up a
+  first attempt to let us try it out a little before we make up our minds,
+  needing longer time than until the feature freeze next week. Feel free to
+  jump in and share your views on this with us!
+ 
+- Another [brain storming
+  session](https://github.com/curl/curl/discussions/8335) was started with my
+  asking for feedback about a new libcurl API for accessing response headers.
+  It immediately showed that the easiest approach I had in mind probably was a
+  little bit too easy and narrow-minded. I think maybe with some more thoughts
+  and iterations this could lead to a good API that will save application
+  authors' time and energy in the future.
+
+- I did an online presentation for the Rust Linz meetup about "curl with
+  rust". The [live-streamed version](https://youtu.be/yLGLKKFFc3g?t=4116) is
+  available for watching, but I believe it will be made available in a more
+  polished version later. I also made the [slides
+  available](https://www.slideshare.net/bagder/curl-with-rust).
+
+- I got really fed up with NSS this Friday morning when I realized they have
+  completely removed their online API documentation, making me ask the
+  question [Has the time come to drop
+  NSS?](https://curl.se/mail/lib-2022-01/0120.html) (from being supported by
+  curl) on the libcurl mailing list. They are clearly making it very hard for
+  outsiders to use their library.
+  
+- Reminder: [get curl support](https://curl.se/support.html) for your company.
+  This is what lets me work on curl this much.
+
+## Blog posts
+
+- [LogJ4 Security Inquiry – Response Required](https://daniel.haxx.se/blog/2022/01/24/logj4-security-inquiry-response-required/)
+
+## Coming up
+
+- curl roadmap 2022
+- Working the header API proposal
+- A presentation on "safe code" for a Swedish broadcasting company
+- curl feature freeze
+- closing in to the 1,000th curl commit author
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # January 21, 2022
 
 ## Happened this week
