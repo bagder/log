@@ -17,10 +17,10 @@
 - I merged the PR that brings the `--json` command line option and I blogged
   about it and how it works.
 
-- On Wednesday we enter [Feature
+- On Wednesday we entered [Feature
   freeze](https://curl.se/dev/feature-window.html) for curl and the next
   pending release. We will now only merge bug-fixes into the master branch
-  until 7.82.0 ships in March 2, 2022.
+  until 7.82.0 ships on March 2, 2022.
 
 - I did an online presentation called "safe code is not a coincidence" for a
   Swedish company on Thursday. It went well and felt appreciated. The topic is
