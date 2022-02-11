@@ -9,9 +9,13 @@
 Azure Pipelines causes us [grief](https://github.com/curl/curl/issues/8410)
 this week. Quite unexpectedly and without any warning, all the 18 CI jobs we
 run on Azure Pipelines started to insta-fail at some point early Wednesday my
-time: `No hosted parallelism has been purchased or granted. To request a free
-parallelism grant, please fill out the following form`. 18 jobs is almost 18%
-of the CI jobs we run and it does impact how we can proceed and merge changes.
+time. All jobs failed immediately and said this message:
+
+    No hosted parallelism has been purchased or granted. To request a free
+    parallelism grant, please fill out the following form`
+
+That is almost 18% of the total amount of CI jobs we run and it impacts how we
+can proceed and merge changes.
 
 I filled in the form and talked to friends "on the inside" about situation who
 help us get the service back again that evenining. I also subsequently got a
