@@ -108,6 +108,14 @@ podcast and that episode went public this week. We talked about curl of
 course. How it is to run the project, HTTP is not an easy protocol and related
 matters.
 
+### GitHub Star
+
+In 2021 I was [invited to the GitHub
+star](https://daniel.haxx.se/blog/2021/08/11/a-github-star/)
+[program](https://stars.github.com/) and this week I was informed that my
+status as [a star](https://stars.github.com/profiles/bagder/) has been renewed
+for 2022.
+
 ## Blog posts
 
 - [My work on tool vs library](https://daniel.haxx.se/blog/2022/02/10/my-work-on-tool-vs-library/)
