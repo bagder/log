@@ -12,13 +12,13 @@ run on Azure Pipelines started to insta-fail at some point early Wednesday my
 time. All jobs failed immediately and said this message:
 
     No hosted parallelism has been purchased or granted. To request a free
-    parallelism grant, please fill out the following form`
+    parallelism grant, please fill out the following form.
 
 That is almost 18% of the total amount of CI jobs we run and it impacts how we
 can proceed and merge changes.
 
 I filled in the form and talked to friends "on the inside" about situation who
-help us get the service back again that evenining. I also subsequently got a
+help us get the service back again that evening. I also subsequently got a
 confirmation email back from Microsoft stating that my *"Free tier request was
 completed"*.
 
@@ -69,7 +69,7 @@ My plan to go much further use this script output to generate a "coverage
 matrix" or something in that style to better help us see what configure
 outputs we use and don't use in tests etc. This, in order to help us spot if
 there are any obvious "white spots" that we should make sure to add builds
-for, or maybe even to detect duplicats - builds that are identical or almost
+for, or maybe even to detect duplicates - builds that are identical or almost
 identical and therefore don't really bring any additional value.
 
 ### quiche
