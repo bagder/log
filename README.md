@@ -40,7 +40,7 @@ has been [reduced by 33%](https://curl.se/mail/lib-2022-02/0097.html)!
 ### :scheme
 
 Last week we received [a bug report](https://github.com/curl/curl/issues/8381)
-saying that a user couldn't changed the `:scheme` pseudo header when curl uses
+saying that a user couldn't change the `:scheme` pseudo header when curl uses
 HTTP/2. When I fixed that oversight, I also took the opportunity to try out a
 few different custom schemes when communicating with a few h2 servers running
 in the wild. It turns out not a single server I tried this with cared about
