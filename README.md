@@ -1,5 +1,123 @@
 # Daniel's weekly report
 
+# February 11, 2022
+
+## Happened this week
+
+### Azure
+
+Azure Pipelines causes us [grief](https://github.com/curl/curl/issues/8410)
+this week. Quite unexpectedly and without any warning, all the 18 CI jobs we
+run on Azure Pipelines started to insta-fail at some point early Wednesday my
+time: `No hosted parallelism has been purchased or granted. To request a free
+parallelism grant, please fill out the following form`. 18 jobs is almost 18%
+of the CI jobs we run and it does impact how we can proceed and merge changes.
+
+I filled in the form and talked to friends "on the inside" about situation who
+help us get the service back again that evenining. I also subsequently got a
+confirmation email back from Microsoft stating that my *"Free tier request was
+completed"*.
+
+Then, early Friday morning **the exact same thing happened again** and when
+I'm writing this at 14:57 in the afternoon the situation remains. None of our
+CI jobs run on Azure Pipelines.
+
+### strlen
+
+Some week ago we discussed the number of `strlen()` calls done by curl (and
+most importantly libcurl) on the libcurl mailing list, and since then
+especially Henrik Holst has worked on reducing the number of such
+calls. Primarily by replacing them with `sizeof()` calls on static strings,
+which then makes it a constant at build-time. Henrik has some more work on
+this in the pipe, but at least for one use case I checked, the number of calls
+has been [reduced by 33%](https://curl.se/mail/lib-2022-02/0097.html)!
+
+### :scheme
+
+Last week we received [a bug report](https://github.com/curl/curl/issues/8381)
+saying that a user couldn't changed the `:scheme` pseudo header when curl uses
+HTTP/2. When I fixed that oversight, I also took the opportunity to try out a
+few different custom schemes when communicating with a few h2 servers running
+in the wild. It turns out not a single server I tried this with cared about
+what I passed to them as `:scheme`. When I then expanded my fix to also
+include HTTP/3, I tried the same experiment on a handful of public servers and
+they ignored the scheme exactly the same way: I couldn't find one server that
+cared about what I set the scheme to in my requests. I'm not saying this is
+any particular flaw or anything, but it surprised me. It is bound to lead to
+the scheme becoming useless because if it'll take time until servers care
+about them, it might be too late as then there might be plenty of clients who
+don't send it or send the wrong contents.
+
+I've talked to some server implementers, both h2 and h3, and I think at least
+some of them might change.
+
+### cijobs
+
+I spent several hours this week writing a first version of the script I call
+`cijobs.pl`. The purpose of this script is to parse the configuration files of
+all the CI services and jobs we have setup and output data and info about them
+all in a generic way. When doing this I realized I had counted the CI jobs
+wrongly. We're doing 99 jobs per commit controlled by files in git right now.
+
+This script is just the first step, and just the first take on the first step.
+
+My plan to go much further use this script output to generate a "coverage
+matrix" or something in that style to better help us see what configure
+outputs we use and don't use in tests etc. This, in order to help us spot if
+there are any obvious "white spots" that we should make sure to add builds
+for, or maybe even to detect duplicats - builds that are identical or almost
+identical and therefore don't really bring any additional value.
+
+### quiche
+
+I got an excellent reproducer command line to trigger an HTTP/3 problem with
+curl built to use quiche. With great help from Lucas in the quiche project, I
+realized they had changed their API slightly without us having updated our
+logic so the problem was no mystery at all and I could make this issue go
+away.
+
+### wolfSSL
+
+I fixed a to me very surprising [bug in the wolfSSL
+backend](https://github.com/curl/curl/pull/8431). Turns out we didn't handle
+the return code from the wolfSSL SSL read function correctly. It seems like
+such a fundamental problem that it is really interesting and curious that we
+haven't seen problems reported with this before and it took all the time until
+now to fix it! Awesome help from my wolfSSL team mates too.
+
+We have supported wolfSSL since 2006. It started its life using the name
+'yassl'.
+
+### presentation
+
+I did my presentation "safe code is not a coincidence" (again) on Thursday for
+a Swedish company. I think the pandemic has made me better at doing online
+presentations. They are certainly harder to do than doing them in meat-space,
+but with a little practice I think I've improved. Who could've known that is
+how it works?
+
+### podcast
+
+I was previously a guest at the [software at
+scale](https://www.softwareatscale.dev/p/software-at-scale-42-daniel-stenberg)
+podcast and that episode went public this week. We talked about curl of
+course. How it is to run the project, HTTP is not an easy protocol and related
+matters.
+
+## Blog posts
+
+- [My work on tool vs library](https://daniel.haxx.se/blog/2022/02/10/my-work-on-tool-vs-library/)
+
+## Coming up
+
+- CI job coverage analysis
+- curl roadmap 2022 webinar on the 17th
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # February 4, 2022
 
 ## Happened this week
