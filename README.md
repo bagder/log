@@ -66,12 +66,12 @@ wrongly. We're doing 99 jobs per commit controlled by files in git right now.
 
 This script is just the first step, and just the first take on the first step.
 
-My plan to go much further use this script output to generate a "coverage
-matrix" or something in that style to better help us see what configure
-outputs we use and don't use in tests etc. This, in order to help us spot if
-there are any obvious "white spots" that we should make sure to add builds
-for, or maybe even to detect duplicates - builds that are identical or almost
-identical and therefore don't really bring any additional value.
+My plan is to go much further and use this script output to generate a
+"coverage matrix" or something in that style to better help us see what
+configure outputs we use and don't use in tests etc. This, in order to help us
+spot if there are any obvious "white spots" that we should make sure to add
+builds for, or maybe even to detect duplicates - builds that are identical or
+almost identical and therefore don't really bring any additional value.
 
 ### quiche
 
