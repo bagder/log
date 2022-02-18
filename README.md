@@ -1,5 +1,74 @@
 # Daniel's weekly report
 
+# February 18, 2022
+
+## Happened this week
+
+### Azure Pipelines
+
+Since our problems with CI jobs on Azure Pipelines continued this week, I had
+a meeting on Thursday with a few friendly chaps from Microsoft in which they
+explained the anti-abuse system that for unknown reasons repeatedly trigger
+for our jobs. We discussed mitigations and ways to get to the bottom the
+problems. Their systems and ways of working are not public so I am
+deliberately vague on the details here.
+
+Since Thursday evening, Europe time, the jobs seem to run fine on Azure
+Pipelines again.
+
+### Release delay
+
+I decided and announced that the pending **curl 7.82.0** release will be
+delayed three days and instead happen on **Saturday March 5, 2022**. This,
+because I will be on vacation the week before on the day of the original
+release date and I rather not do the release whilst away.
+
+We will stick to the future release dates so the next release cycle will
+therefore be 3 days shorter.
+
+### Deprecate NPN
+
+We have now marked NPN as subject for "deprecation" later this year (next to
+NSS). This TLS extension was made for SPDY and could be used for HTTP/2 in the
+early days, but was removed from Chrome and Firefox already many years ago.
+There should barely be any users left of this extension in the wild.
+
+### Roadmap 2022 webinar
+
+I did the webinar and outlined my rough plans of what I will (maybe) work on
+in curl during 2022. It should be available on Youtube as well soon. Stay
+tuned.
+
+### New CI jobs
+
+As a result of my new scripts last week for collecting info about our existing
+CI jobs in curl, I figured out that we were missing testing builds with a few
+backends that we support and maintain. Said and done. We are now at a total of
+101 CI jobs.
+
+### Internals documentation
+
+I cleaned up the [libcurl internals](https://everything.curl.dev/internals)
+section of *everything curl* by moving over text from the somewhat stale
+INTERALS.md document we had in the source tree to make the book the single
+canonical place for this docs.
+
+Documenting internals is always hard as by nature the internals move around
+and change much more since it isn't limited by API or ABI restrictions.
+
+## Blog posts
+
+- [The great curl roadmap 2022 webinar](https://daniel.haxx.se/blog/2022/02/14/the-great-curl-roadmap-2022-webinar/)
+
+## Coming up
+
+- h2 multiplexing with hyper
+- my get-headers API proposal version 2, much updated
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # February 11, 2022
 
 ## Happened this week
@@ -129,7 +198,6 @@ for 2022.
 ## Feedback
 
 [Comment here](https://github.com/bagder/log/discussions)
-
 
 # February 4, 2022
 
