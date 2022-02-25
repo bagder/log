@@ -1,5 +1,94 @@
 # Daniel's weekly report
 
+# February 25, 2022
+
+## Happened this week
+
+### headers API v2
+
+I posted my second version of the [HTTP header access
+API](https://github.com/curl/curl/wiki/get-headers-v2) proposal. After
+[feedback](https://github.com/curl/curl/discussions/8496), I have improved it
+a bit further and I think we might be settling in on a design now to move
+forward with. I think the next step is writing a first implementation and
+create man pages for the two functions from the proposal wiki. Then let people
+try that out and perhaps tweak the APIs further.
+
+It's not too late for you to check it out and tell us what you think!
+
+### hyper test inventory
+
+I still haven't made HTTP/2 multiplexing work with hyper. I get strange frame
+size errors and I'm a little stuck in the debugging of that (and I filed [an
+issue on hyper](https://github.com/hyperium/hyper/issues/2761)). In the mean
+time, I went over the remaining tests that are still disabled for hyper and
+took notes what they test. See the [hyper wiki
+page](https://github.com/curl/curl/wiki/Hyper) for the details. I think one
+way forward might be to document a few of those things as "known restrictions"
+as "not supported with hyper".
+
+### Remove output on error
+
+After some initial discussions on [IRC](https://curl.se/docs/irc.html), I
+wrote up a quick PR to introduce a
+[--remove-on-error](https://github.com/curl/curl/pull/8503) command line
+option. This option tells curl to remove any downloaded file if it returns
+error, to avoid leaving leftovers and incomplete files. Especially useful when
+doing (many) parallel transfers I think.
+
+This might land in git once the feature window opens again. Planned for March
+10.
+
+### localization
+
+David Hu brought a suggestion that
+[localization](https://github.com/curl/curl/discussions/8499) could improve
+curl as it would make it speak user's local language instead of only
+English. As Dan Fandrich replied in the thread: it has taken almost 24 years
+for someone to finally suggest this! I'm personally not terribly eager to work
+on localization as I foresee a future with always incomplete translations. But
+I'm not against the idea. If someone wants to drive it.
+
+### msh3
+
+I assisted Nick Banks a little this week when [he made curl use
+msh3](https://github.com/nibanks/curl/pull/1) for HTTP/3. msh3 is the
+Microsoft HTTP/3 library built on top of the msquic Microsoft QUIC
+library. The implementation is maybe still a little rough, but I've seen it
+download HTTP/3 content.
+
+Now, I like the prospect of having three backends in curl for HTTP/3 as we're
+working on having two for HTTP/2...
+
+### docker
+
+The "pull counter" for [the official curl docker
+image](https://hub.docker.com/r/curlimages/curl) has now officially surpassed
+4 billion, and while doing it the rate was at 60-70 pulls/second.
+
+Bonus: watch Jim Fuller's presentation from 2020 titled [The First 10M Pulls:
+Building The Official Curl Image for Docker
+Hub](https://youtu.be/lZreoYmoMHM).
+
+### curling in the Olympics
+
+Sweden won one gold (men) and two bronze medals (women + mixed double) in
+[curling at the 2022 Olympics](https://en.wikipedia.org/wiki/List_of_Olympic_medalists_in_curling).
+
+## Blog posts
+
+- [curl on “software at scale”](https://daniel.haxx.se/blog/2022/02/25/curl-on-software-at-scale/)
+
+## Coming up
+
+- Vacation next week, skiing with the family. Expect me to be slow to respond
+- the curl 7.82.0 release happens on March 5, delayed a few days due to the
+  above mentioned ski trip
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # February 18, 2022
 
 ## Happened this week
