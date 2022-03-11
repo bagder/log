@@ -6,7 +6,7 @@
 
 ### Vacation
 
-I didn't do any weekly report last week becase I was on vaction. I went up
+I didn't do any weekly report last week because I was on vacation. I went up
 north a bit in Sweden (~500km from my house) and enjoyed downhill skiing with
 the family for a few days. Snow, sun and lots of time outdoors. Good times.
 
@@ -25,7 +25,7 @@ each new "thing" introduced...
 ### BearSSL
 
 I brought up [the question](https://curl.se/mail/lib-2022-03/0019.html) if
-BearSSL is still a library to recomend since they haven't had a commit in over
+BearSSL is still a library to recommend since they haven't had a commit in over
 a year and is still lacking major features such as TLS 1.3.
 
 I didn't get a whole lot of feedback, although [the author seems to think it
@@ -75,7 +75,7 @@ happen](https://curl.se/mail/meet-2022-03/0000.html).
 ## Coming up
 
 - get started on implementing headers API v2 proposal
-- work with PR authors and merge some pendiing ones
+- work with PR authors and merge some pending ones
 
 ## Feedback
 
