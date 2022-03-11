@@ -61,6 +61,11 @@ and details in that discussion.
 
 I'll keep my opinions about the main topic to myself until asked.
 
+### curl up 2022
+
+I started the discussion about what and [how to make curl up 2022
+happen](https://curl.se/mail/meet-2022-03/0000.html).
+
 ## Blog posts
 
 - [curl 7.82.0 Impartial Content](https://daniel.haxx.se/blog/2022/03/05/curl-7-82-0-impartial-content/)
