@@ -1,5 +1,105 @@
 # Daniel's weekly report
 
+# March 25, 2022
+
+## Happened this week
+
+### Birthday
+
+On March 20, 2022 the [curl project turned
+24](https://daniel.haxx.se/blog/2022/03/20/curl-is-now-24/) years old. On that
+birthday, curl was a little over 2,000 lines of code and the command line tool
+(there was no library yet) featured 24 command line options.
+
+I figured I would *not* write a humongous birthday blog post this year. I save
+that for next year.
+
+### Merged headers API
+
+After having spent just 9 calendar days since I wrote the first line of code,
+[I merged the headers
+API](https://daniel.haxx.se/blog/2022/03/22/a-headers-api-for-libcurl/)
+pull-request commits into curl's master branch, to be part of the next
+release. The API is still marked experimental so it will be disabled by
+default. I still hope a few will enable it, try it and tell me what they
+think!
+
+### curl -w headers 
+
+As part of the headers API PR, I added [header-picking
+support](https://daniel.haxx.se/blog/2022/03/24/easier-header-picking-with-curl/)
+to curl's `-w` option. It provides two new ways for the tool to extract
+contents of HTTP headers. I think especially the `%{header_json}` thing has a
+chance of hitting it with some users as it will make curl a whole lot better
+to integrate into a JSON speaking world.
+
+### A ghost CVE
+
+I spent some time early this week chasing and investigating the details around
+an [Apple ghost
+CVE](https://daniel.haxx.se/blog/2022/03/23/anatomy-of-a-ghost-cve/). I never
+got any explanation from Apple.
+
+### curl presentation
+
+I did an online presentation about curl for Fyndiq I called [Let me tell you
+about
+curl](https://daniel.haxx.se/blog/2022/03/24/let-me-tell-you-about-curl/).
+
+### libcurl on WinCE
+
+I had a productive meeting with a potential new customer. I will help them get
+libcurl with wolfSSL to build and run proper on an old WinCE on ARM platform...
+
+### Podcast published
+
+The Swedish-speaking podcast Trevlig Mjukvara published [the
+episode](https://trevligmjukvara.se/s10e04/) I was a guest at and recorded
+last week.
+
+### Hyper progress
+
+After Sean's call for help to work on the hyper integration that I mentioned
+last week, there has been more hyper related activity in several areas. We are
+now down to a mere **17** disabled test cases in hyper builds, and there are
+several open issues for remaining work. (Unfortunately this was partly done by
+adding "no support for clear-text upgrade to HTTP/2" as a known restriction.)
+
+### "backend"
+
+I'm running a Twitter poll on how to spell [backend, back-end or back
+end](https://twitter.com/bagder/status/1507257617332195358) as a follow-up
+from discussions on how we should write the word in [everything
+curl](https://github.com/bagder/everything-curl/pull/191).
+
+### Getting started with libcurl video
+
+The video from my webinar from last week went up and I update [my blog
+post](https://daniel.haxx.se/blog/2022/03/15/webinar-getting-started-with-libcurl/)
+about it to also feature the video now.
+
+## Blog posts
+
+- [curl is now 24](https://daniel.haxx.se/blog/2022/03/20/curl-is-now-24/)
+- [Trevlig Mjukvara](https://daniel.haxx.se/blog/2022/03/22/trevlig-mjukvara/)
+- [A headers API for libcurl](https://daniel.haxx.se/blog/2022/03/22/a-headers-api-for-libcurl/)
+- [Anatomy of a ghost CVE](https://daniel.haxx.se/blog/2022/03/23/anatomy-of-a-ghost-cve/)
+- [Easier header-picking with curl](https://daniel.haxx.se/blog/2022/03/24/easier-header-picking-with-curl/)
+- [Let me tell you about curl](https://daniel.haxx.se/blog/2022/03/24/let-me-tell-you-about-curl/)
+
+## Coming up
+
+- curl enters feature-freeze on Wednesday March 30
+- European daylight saving time switch on Sunday
+- work with two potential security vulnerabilities
+- libcurl on WinCE
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+# Daniel's weekly report
+
 # March 18, 2022
 
 ## Happened this week
