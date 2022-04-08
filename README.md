@@ -1,5 +1,100 @@
 # Daniel's weekly report
 
+# April 8, 2022
+
+## Happened this week
+
+### Uncurled
+
+I have had a few pending blog posts about doing Open Source in draft
+state for a few years by now and this week I finally made up my mind:
+instead of making these blog posts, I am going to convert them and
+gather other notes, thoughts and documents of mine into *a book* about
+my experiences and lessons from a life (well, three decades at least)
+with Open Source. I've started the work without yet announcing where/how
+the work in progress can be seen, although lots of good people of course
+have found it and started to provide feedback and help me out. I am
+blessed with the best friends.
+
+I am happy with what I have managed to blurt together already the first
+few days (at 8,500 words and counting), and there is still more to write
+and expand on. I really need to consider how to properly put it all
+together in a comprehensible way. To make the result approachable and
+decently readable. But I am not in hurry.
+
+If you have ideas of what you would like to see me cover, let me know.
+
+I asked for [title
+suggestions](https://twitter.com/bagder/status/1512082889130741774) on
+Twitter and I got a flood of good suggestions back. I have decided to go
+with:
+
+**Uncurled** - everything I know and learned about running and
+maintaining Open Source projects for three decades.
+
+### Rate limit curl
+
+I grabbed another old outstanding bullet point from the TODO document in
+the curl repository and put together a new command line option propsal
+for curl. Using this, tentatively called `--rate`, option you can ask
+curl to [do transfers/requests no faster
+than](https://github.com/curl/curl/pull/8671) N transfers per M time
+units when you ask curl to do multiple transfers in a serial manner.
+
+Very early days still for it, but I'm open for your criticism and
+feedback on how it planned to work.
+
+### Deprecate RANDOM_FILE and EGDSOCKET
+
+In one of my passes of the curl source code, it struck me that we have
+two setopt options for libcurl that are not in effective use
+anymore. The `CURLOPT_RANDOM_FILE` and `CURLOPT_EGDSOCKET` options were
+only supported with older OpenSSL versions that mostly are extinct now.
+
+I'm moving forward to [deprecate
+them](https://github.com/curl/curl/pull/8670) and their command line
+option companions.
+
+### Android debugging
+
+I had a productive meeting with customer S and their somewhat strange
+problems with `curl_multi_wakeup()` on Android. We have some ideas on
+further debugging, logging and analuzing strategies that should help us
+continue to narrow down and understand when and why the problem appears...
+
+### WinCE 
+
+Meanwhile, customer W had virtually no issues at all building and
+running a recent libcurl version for WinCE 5.0.
+
+### curl up
+
+At our weekly curl meeting yesterday at [wolfSSL](https://wolfssl.com)
+we decided to move forward and try to organize something curl up - like
+in San Francisco. We are now investigating the venue sitation. More
+details to follow soon if things just line up as we hope to.
+
+### User survey
+
+I started to go over the questions in the annual curl user survey to
+freshen them up and also edit them based on feedback we got last year -
+add/remove answer alternatives, maybe remove some questions and see if
+we should add something. Right now, I aim at making the survey go live
+on Monday May 16th.
+
+## Blog posts
+
+- no posts this week
+
+## Coming up
+
+- I will be off next week, going somewhere a few days in search of spring
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # April 1, 2022
 
 ## Happened this week
