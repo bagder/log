@@ -35,7 +35,7 @@ maintaining Open Source projects for three decades.
 ### Rate limit curl
 
 I grabbed another old outstanding bullet point from the TODO document in
-the curl repository and put together a new command line option propsal
+the curl repository and put together a new command line option proposal
 for curl. Using this, tentatively called `--rate`, option you can ask
 curl to [do transfers/requests no faster
 than](https://github.com/curl/curl/pull/8671) N transfers per M time
@@ -59,7 +59,7 @@ option companions.
 
 I had a productive meeting with customer S and their somewhat strange
 problems with `curl_multi_wakeup()` on Android. We have some ideas on
-further debugging, logging and analuzing strategies that should help us
+further debugging, logging and analyzing strategies that should help us
 continue to narrow down and understand when and why the problem appears...
 
 ### WinCE 
@@ -71,7 +71,7 @@ running a recent libcurl version for WinCE 5.0.
 
 At our weekly curl meeting yesterday at [wolfSSL](https://wolfssl.com)
 we decided to move forward and try to organize something curl up - like
-in San Francisco. We are now investigating the venue sitation. More
+in San Francisco. We are now investigating the venue situation. More
 details to follow soon if things just line up as we hope to.
 
 ### User survey
