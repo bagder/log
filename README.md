@@ -1,5 +1,60 @@
 # Daniel's weekly report
 
+# April 15, 2022
+
+## Happened this week
+
+### Vacation
+
+I spent 4 days of this week away from the keyboard together with my family and
+it was great. Now there's a four-day weekend following (national holidays on
+Friday and Monday).
+
+### Uncurled
+
+My Uncurled book project is now at 11,900 words as I've added more content,
+but I have also thought of some more chapters to add so I imagine I will be
+able to add several thousand more words given a little more time. I will use a
+few more weeks on it before I announce for real and give away the URL in
+public.
+
+As a little side-effect, as I added a CI job that runs a spellchecker on the
+content I also went through and added a spellcheck CI job to "everything
+curl", which was quite tedious since it features soooo many words that do not
+exist in the existing word lists. Still, I did it and this shall hopefully make
+it easier for me to maintain better spelled books going forward.
+
+### msh3
+
+I merged Nick Banks' PR that brought msh3 support to curl. msh3 is another
+HTTP/3 library, which then makes curl support three different ones - all still
+in experimental mode.
+
+We support many backends of protocol handlers like this to allow users to
+select which ones they want curl to use. "Let a thousand flowers bloom" etc
+and by allowing them to "compete" against each other we can either let them
+all remain supported if that is what the community wants or if, over time, one
+of them seems to become the leader or "the winner" we could maybe go with that
+in a future.
+
+We also help the ecosystem of h3 libraries and h3 implementers to test more
+combinations.
+
+## Blog posts
+
+- [More steel](https://daniel.haxx.se/blog/2022/04/09/more-steel/)
+- [msh3 as the third h3 backend](https://daniel.haxx.se/blog/2022/04/10/msh3-as-the-third-h3-backend/)
+
+## Coming up
+
+- inform distros@openwall about the pending CVE announcement
+- meeting about about open source supply chain security Thursday with ZZZZ
+- start putting together the 7.83.0 release presentation
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # April 8, 2022
 
 ## Happened this week
