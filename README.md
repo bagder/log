@@ -1,5 +1,71 @@
 # Daniel's weekly report
 
+# April 22, 2022
+
+## Happened this week
+
+### Uncurled
+
+At 15,400 words.
+
+### Security
+
+Oh man, last week I was still in blissful ignorance of what would come. I was
+planning for a single CVE advisory and publication in association with the
+pending release coming up next week on April 27.
+
+Then Harry Sintonen "happened" as he ruthlessly reported **three** additional
+problems to us, making most of my week getting spent on researching,
+debugging, patching, requesting CVEs, pre-alerting and writing security
+advisories. Let's hope we have stopped on four for this time.
+
+None of these new security problems are of the soul-crushing earth-ending kind
+but they are still bad enough to cause my brain to hurt. You will of course
+get to read all the details on Wednesday.
+
+### Cyber Safety Review Board
+
+I participated in a meeting with the US [Cyber Safety Review
+Board](https://www.cisa.gov/cyber-safety-review-board) (I love saying that
+name) this week with two fellow Open Source maintainers from well-known
+projects and talked Open Source, development, security, slow upgrade cycles
+and helped explain how all this is done and works. I would like to believe
+that we contributed a little to educating influential people on this topic. I
+have no idea if it ultimately changes anything.
+
+### curl up
+
+We announced [curl up 2022](https://github.com/curl/curl-up/wiki/2022) and
+that it will take place in San Francisco on June 6. This is the first curl up
+in North America and it is arranged by [wolfSSL](https://www.wolfssl.com/). I
+am really looking forward to this!
+
+I rely on users and developers to tell me what you want to talk about or to
+listen to, and of course that you want to help sponsor the event.
+
+curl up 2022 is going to be a full day with curl and curl-related
+presentations by yours truly and ideally a handful of knowledgeable curl
+developers and curl users.
+
+This will also be the first time since 2016 that I will travel to the US
+again. If you want to meet up over a coffee or pick my brains for something
+while I'm there, you know where to find me.
+
+## Blog posts
+
+ - [curl up 2022 San Francisco](https://daniel.haxx.se/blog/2022/04/20/curl-up-2022-san-francisco/)
+
+## Coming up
+
+ - the 7.83.0 release, with a release video presentation as usual
+ - nail down some more curl up details and agenda items
+ - curl webinar on Thursday? Not sure I will manage that...
+ - a curl presentation for a well-known car company on Friday
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # April 15, 2022
 
 ## Happened this week
