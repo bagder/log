@@ -1,5 +1,65 @@
 # Daniel's weekly report
 
+# April 29, 2022
+
+## Happened this week
+
+### Uncurled
+
+At 21,600 words now. It is time to "announce" it soon to see what feedback I
+can get.
+
+### curl release
+
+I worked rather intensely on the release all the way until Wednesday when it
+was made public together with the four new vulnerabilities. Mid-through my
+release video live-stream I had my computer crash so I had to start over the
+beginning.
+
+### Security
+
+This time, life was ruthless on me/us and within 36 hours from the release had
+been announced we had already received **three** new security vulnerability
+reports that turned out genuine. Faced this, we could not do much else than
+break our regular schedule and plan for an "emergency" patch release within a
+few weeks. We have not yet set the date but I think we will go with two weeks
+from 7.83.0 => May 11.
+
+The four CVEs we announced with the 7.83.0 release were all rewarded money from
+[our bug bounty](https://curl.se/docs/bugbounty.html), two of them got 2,400
+USD which also is the new record amounts for curl reports.
+
+### curl up
+
+I have started to draft the agenda for [curl up
+2022](https://github.com/curl/curl-up/wiki/2022), but there are still lots of
+gaps for additional talks. We also decided to do a speaker's dinner on the
+Sunday before the event. Another reason to submit a talk proposal.
+
+There are talks with some potential sponsors of the event, but none of them
+said okay just yet.
+
+We are working on curl up swag for attendees.
+
+### Talks
+
+I talked curl for developers at car company.
+
+## Blog posts
+
+- [curl 7.83.0 headers bonanza](https://daniel.haxx.se/blog/2022/04/27/curl-7-83-0-headers-bonanza/)
+
+## Coming up
+
+- Get a curl patch release ready
+- add more talks to the curl up agenda
+- get curl up sponsors confirmed
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # April 22, 2022
 
 ## Happened this week
