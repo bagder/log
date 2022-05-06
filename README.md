@@ -54,6 +54,7 @@ to work as well and thus targeted to meet their very tough deadline.
 
 ## Blog posts
 
+- [Uncurled](https://daniel.haxx.se/blog/2022/04/30/uncurled/)
 - [Considered “18+”](https://daniel.haxx.se/blog/2022/05/02/considered-18/)
 - [now on HTTP/3](https://daniel.haxx.se/blog/2022/05/02/now-on-http-3/)
 - [Meeting the Cyber Safety Review Board](https://daniel.haxx.se/blog/2022/05/05/meeting-the-cyber-safety-review-board/)
