@@ -4,6 +4,85 @@
 
 ## Happened this week
 
+### curl up
+
+Finishing up some decisions on swag for [the
+event](https://github.com/curl/curl-up/wiki/2022) while trying to get more
+speakers to fill out the agenda. I have no problem to talk myself but I figure
+there is some kind of maximum I should not go beyond...
+
+I would like to see speakers on HTTP/3, someone using libcurl and ideally a
+libcurl binding author.
+
+### string comparisons
+
+We got an awesome opportunity to deep dive into the rabbit hole of case
+insensitive string comparisons this week after the OpenSSL 3.0.3 crash landing
+on Windows 7. I got a chance to write it up in a blog post, we had the curl
+function slightly optimized and it seems OpenSSL is going to do their own
+function proper in the end.
+
+### curl user survey
+
+I forgot to launch [the survey](https://daniel.haxx.se/blog/2022/05/17/curl-annual-user-survey-2022/) on the day I had planned for it, but instead it
+went live two days later. It won't matter too much as it will still be up the
+fourteen promised days. Answers have started to appear. Share the link with your friends!
+
+### security
+
+We keep seeing a pretty high rate of quality security reports submitted to the
+project and we have *at least* two confirmed security vulnerabilities in the
+queue now already. To be worked on, fixed and announced in sync with the
+pending next curl release.
+
+### ocsp
+
+I have had a startup meeting with a customer who wants OCSP support in
+libcurl, and while there's no contract for this signed yet the possibility of
+this happening seems bright. Once I get most technical details and
+requirements in place I will share the API and initial design plans publicly
+for broader comments and flames.
+
+### feature window
+
+The curl feature window opened and we've merged a few changes already, making
+the next curl version to become **7.84.0** for sure. There are more pending
+that are likely to merge soon. Stay tuned. I hope to blog separately about the
+larger things.
+
+### epub Uncurled
+
+I figured out that it was pretty easy to generate [an epub version of
+Uncurled](https://github.com/bagder/uncurled/discussions/59) so now there is
+one, updated daily. It could certainly use some more polish, but at least this
+version can be read.
+
+### customer debugging
+
+I spent time assisting two separate customers this week with fairly
+challenging build and run-time related issues on their respective (unusual)
+platforms. To keep me on my toes.
+
+## Blog posts
+
+- [curl annual user survey 2022](https://daniel.haxx.se/blog/2022/05/17/curl-annual-user-survey-2022/)
+- [case insensitive string comparisons in C](https://daniel.haxx.se/blog/2022/05/19/case-insensitive-string-comparisons-in-c/)
+
+## Coming up
+
+- fine-tune the OCSP design doc with customer
+- another biggish customer project kick-off coming up
+- work on (still private) security reports
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
+# May 13, 2022
+
+## Happened this week
+
 ### release
 
 After 14 intense days since the previous release I once again had to go
