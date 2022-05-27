@@ -1,5 +1,63 @@
 # Daniel's weekly report
 
+# May 27, 2022
+
+## Happened this week
+
+### curl up
+
+[curl up](https://github.com/curl/curl-up/wiki/2022) now has an almost fully
+populated agenda. There will certainly be some further last minute movements,
+but now you get fairly good picture of what we'll talk about.
+
+We also opened the event for online attendees, so if you want to participate
+but can't go to the bay area, skip over to the page linked above and register.
+
+Most of the planning and my journey there are now coming into place.
+
+Relatedly, it seems I might fly up to Seattle during that week to meet people
+at some big corporation up in that area.
+
+... and now I have *three* or *four* presentations to complete before then.
+
+### OCSP
+
+I had very productive meeting with customer XYZ about how a future OCSP API to
+libcurl should work and behave. It sounds like this might happen soon and as
+soon as I get permission I will share the design doc with the greater curl
+community for wider feedback/praise/criticism.
+
+### WebSockets
+
+We reached an agreement with a company who will sponsor the implementation of
+WebSockets in curl and libcurl. The API I am aiming for is the one [we
+designed in the curl wiki](https://github.com/curl/curl/wiki/WebSockets) last
+year. I'm letting the company itself announe this to not steal their thunder
+so I'm not naming them here (yet).
+
+### Survey 
+
+The current [curl
+survey](https://daniel.haxx.se/blog/2022/05/17/curl-annual-user-survey-2022/)
+seems to receiving responses at a slower rate than recent years, but I cannot
+figure out why or how to change it. Still, over 300 responses have been
+received and it will remain up for a few more days.
+
+## Blog posts
+
+- [curl offers repeated transfers at slower pace](https://daniel.haxx.se/blog/2022/05/23/curl-offers-repeated-transfers-at-slower-pace/)
+
+## Coming up
+
+- my daughter's graduation (party)
+- curl up preparations
+- OCSP polish
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # May 20, 2022
 
 ## Happened this week
