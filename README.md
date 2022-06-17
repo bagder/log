@@ -1,5 +1,93 @@
 # Daniel's weekly report
 
+# June 17, 2022
+
+## Happened this week
+
+### websockets
+
+The WebSockets work took off. Once I decided to not use a third party library
+I proceeded and implemented the [first
+steps](https://github.com/curl/curl/pull/8995). It can already do some basic
+back and forth messages fine that I verified talking to a live test server.
+
+In parallel with that start, I have to [introduce
+`CURLOPT_PROTOCOLS_STR`](https://github.com/curl/curl/pull/8992) as a
+replacement for `CURLOPT_PROTOCOLS` because when I add support for two new
+protocols to libcurl the existing 32 bit protocol bitmask gets overflown - so
+we need a new way to control which protocols to allow. A way that isn't
+limited to 32 protocols.
+
+Once some WebSockets basics worked, I started looking into the test server
+issue and quickly decided I will write my own server implementation as well
+and just extend the existing HTTP test server with it for maximum
+flexibility. I started and I have one very basic test case working. It also
+immediately stressed that my initial client side code is still too naive etc.
+
+I've tried to update the WebSockets PR description with items that work and
+things still not work. I will try to maintain that going forward, while also
+slowly extending the documentation that is part of the PR.
+
+I brought two separate WebSockets design questions to the curl mailing lists:
+
+1. how should we [make the curl command line tool deal with websockets](https://curl.se/mail/archive-2022-06/0008.html) in the ideal way?
+2. thoughts on the [write callback for websockets](https://curl.se/mail/lib-2022-06/0049.html)
+
+My plan is to take this gently and slowly forward, as I also have other things
+to work on at the same time. I believe I've managed to land some fundamental
+parts already that I will work on improving and gluing in properly going
+forward, supported by tests using my coming test server.
+
+I'm also hoping for and assuming that I will get more guidance from users
+during this progress to make sure this becomes exactly as good as we want it
+to be. I'm aiming for a first implementation to land in the October 2022
+release.
+
+### REUSE
+
+I merged the PR that brought REUSE compliance to curl and now we have better
+control and information about licenses and copyright throughout the
+project. (see separate blog post)
+
+Max Mehl did most of the work for this but I'm pretty satisfied with the
+follow-up cleanups I did as now we have scripts and decent infra to maintain
+this state as well going forward.
+
+### analysis
+
+Putting together the user survey analysis always take quite some time and
+effort to put together, write up and generate the graphs for, but I managed to
+finally complete it this week. 36 pages for everyone to dig into. See blog
+post.
+
+### URLs
+
+The subject of URLs vs URIs came up on the IETF HTTP Working group mailing
+list and I could help but [to
+respond](https://lists.w3.org/Archives/Public/ietf-http-wg/2022AprJun/0169.html). Short and sweet but with no intention to go full rant on this again.
+
+### podcasts
+
+I participated on one podcast on Monday and I had another preparation meeting
+on Thursday about a coming podcast participation. I'll mention and link them
+in future weekly reports when they go public.
+
+## Blog posts
+
+- [curl user survey 2022 analysis](https://daniel.haxx.se/blog/2022/06/16/curl-user-survey-2022-analysis/)
+- [curl is REUSE compliant](https://daniel.haxx.se/blog/2022/06/17/curl-is-reuse-compliant/)
+
+## Coming up
+
+- WebSockets
+- issue with h2 over HTTPS proxy
+- OCSP?
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # June 10, 2022
 
 ## Happened this week
