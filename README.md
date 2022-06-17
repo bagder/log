@@ -25,8 +25,8 @@ flexibility. I started and I have one very basic test case working. It also
 immediately stressed that my initial client side code is still too naive etc.
 
 I've tried to update the WebSockets PR description with items that work and
-things still not work. I will try to maintain that going forward, while also
-slowly extending the documentation that is part of the PR.
+things that do not work **yet**. I will try to maintain that going forward,
+while also slowly extending the documentation that is part of the PR.
 
 I brought two separate WebSockets design questions to the curl mailing lists:
 
