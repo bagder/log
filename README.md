@@ -19,8 +19,7 @@ has been redesigned a little bit, but I have a good feeling about this new
 design. I will continue from here and write up some more complicated test
 cases and make sure the client side handles them correctly.
 
-[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353) is the
-company sponsoring my WebSockets work.
+[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353) sponsors my WebSockets work.
 
 ### release (oops)
 
