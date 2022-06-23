@@ -1,5 +1,55 @@
 # Daniel's weekly report
 
+# June 23, 2022
+
+## Happened this week
+
+### national holiday
+
+I'm doing my weekly report a day early this week because there's a national
+holiday in Sweden tomorrow: midsummer's eve, and I intend to spend it with my
+family away from keyboards.
+
+### websockets
+
+I've been struggling with the API for WebSockets a bit more this week (I've
+bounced around ideas and discussions on the curl-library list) and worked on
+the server-side implementation for my test server. The result is that the API
+has been redesigned a little bit, but I have a good feeling about this new
+design. I will continue from here and write up some more complicated test
+cases and make sure the client side handles them correctly.
+
+[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353) is the
+company sponsoring my WebSockets work.
+
+### release (oops)
+
+Last weekend I spotted "something". An oopsie. While I reveal the details of
+that "something" just yet, the consequences of it are that we decided to
+expedite the pending curl release. The new release date for curl 7.84.0 has
+been set to **June 27th**. I will of course tell you about the "something"
+when I can.
+
+The new date made me get working on curl release activities this week, sooner
+than previously anticipated and planned, partly also because of me not wanting
+to do this work during this coming national holiday weekend as the release day
+is now set to happen immediately afterwards (on the following Monday).
+
+## Blog posts
+
+**none** this week
+
+## Coming up
+
+- The curl 7.84.0 release
+- a podcast recording
+- continued work on WebSockets
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # June 17, 2022
 
 ## Happened this week
