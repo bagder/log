@@ -1,10 +1,6 @@
-# Daniel's weekly report
+# Daniel's weekly report, July 1, 2022
 
-# July 1, 2022
-
-## Happened this week
-
-### release
+## release
 
 I had to spend a few hours over the weekend to polish the final bits so I
 could put the **curl 7.84.0** release out properly on Monday morning together
@@ -15,7 +11,7 @@ seems to be some build issues related to our new magic for doing
 locks. Nothing serious enough to warrant any panic follow-up releases yet at
 least. We will most likely open the feature windows again tomorrow, Saturday.
 
-### libproxy
+## libproxy
 
 An almost six years old PR for adding
 [libproxy](https://libproxy.github.io/libproxy/) support to curl was brought
@@ -43,7 +39,7 @@ project for the benefit of all users and the ecosystem at large.
 
 Alternatively, someone could make a new project to offer this functionality.
 
-### podcast
+## podcast
 
 I participated in a podcast recording on Monday. Lots of talk about how I
 started, how we got here, how I develop, things about open source, about IETF,
@@ -59,7 +55,7 @@ get back with more details as they unfold going forward.
 
 We will offer t-shirts to those who first register (and attend) the event.
 
-### websockets
+## websockets
 
 I try to squeeze in websockets developed in the midst of everything else and I
 believe I am making progress, even if I also do a lot of back and forth to
