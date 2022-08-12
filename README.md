@@ -1,89 +1,67 @@
-# Daniel's weekly report, July 1, 2022
+# Daniel's weekly report, August 12, 2022
 
-## release
+## vacation
 
-I had to spend a few hours over the weekend to polish the final bits so I
-could put the **curl 7.84.0** release out properly on Monday morning together
-with four new security advisories.
+It has been several weeks since I last wrote a weekly report. I had this
+period of vacation mixed with a little work. It was great but now I'm back at
+full speed ahead and I have spent this week working hard on shrinking the
+amount of open issues and pull-requests. They had managed to grow in number
+about recently but as we reach the end of this week they seem to be down to
+manageable numbers again.
 
-There have been no major release-quakes; the most serious new flaws reported
-seems to be some build issues related to our new magic for doing
-locks. Nothing serious enough to warrant any panic follow-up releases yet at
-least. We will most likely open the feature windows again tomorrow, Saturday.
+## feature freeze
 
-## libproxy
+Last week curl entered feature freeze and we are aiming for a release on
+August 31, which makes the release cycle one week longer than usual this
+time. It might actually result in a record number of bugfixes for a single
+release if the pace keeps up.
 
-An almost six years old PR for adding
-[libproxy](https://libproxy.github.io/libproxy/) support to curl was brought
-back to life and [resubmitted](https://github.com/curl/curl/pull/9068) this
-week.
+## QUIC
 
-Lots of people have voiced their support for having something like this added,
-so it seems there's a demand. I am however still very skeptical about libproxy
-as a library and project: no docs, no tests, no CI, blocking behavior, its own
-(bad) URL parser, its own (bad) HTTP/1 GET function and more. (It being
-written in C++ may not be a problem in itself but it will keep me away from
-working on it.)
+Stefan Eissing landed his QUIC API work in wolfSSL this week, giving yet
+another TLS library the ability to be used in a QUIC implementation. If the
+plan sticks, we should soon be able to run HTTP/3 transfers with curl using
+ngtcp2 powered by wolfSSL. I promise to let you know when you too can try this
+out!
 
-People say its a "default" library and "commonly used" everywhere, but I am
-afraid those things don't make its problems disappear. I am afraid I cannot
-condone linking libproxy with curl before several of its worst problems are
-addressed. Doing so will only put users at risk and risk that users will end
-up with a (lib)curl experience.
+## IPFS
 
-Everyone is still capable and free to use libproxy themselves and pass in the
-proxy it finds to curl for use.
+When I noticed a [tweet by
+Phoronix](https://twitter.com/phoronix/status/1557302372396941312) saying
+**"#IPFS Supported In FFmpeg 5.1, IPFS Devs Envision Support In More
+Open-Source Project"** I decided I should just write down what I have learned
+about IPFS and the use of remote HTTP gateways and how I think the use of a
+default one is a bad idea. I figured that if how this works was a surprise to
+me, it might also be a surprise to others.
 
-libproxy enthusiasts should roll up their sleeves and start fixing up the
-project for the benefit of all users and the ecosystem at large.
-
-Alternatively, someone could make a new project to offer this functionality.
-
-## podcast
-
-I participated in a podcast recording on Monday. Lots of talk about how I
-started, how we got here, how I develop, things about open source, about IETF,
-about network protocols and all that good stuff. As usual, I will let you know
-when it becomes available.
-
-## curl up 2022
-
-[curl up 2022](https://github.com/curl/curl-up/wiki/2022) will happen on
-September 15, 2022. We had to cancel the in-person event we originally
-planned, but now we will instead run an all-virtual event in September. I will
-get back with more details as they unfold going forward.
-
-We will offer t-shirts to those who first register (and attend) the event.
+The reaction in the ffmpeg project was instant and a
+[patch](https://ffmpeg.org/pipermail/ffmpeg-devel/2022-August/299924.html) was
+posted to revert the default gateway. The follow-up discussion on that mailing
+list turned emotional very quickly but at least the ball is rolling now.
 
 ## websockets
 
-I try to squeeze in websockets developed in the midst of everything else and I
-believe I am making progress, even if I also do a lot of back and forth to
-rewrite parts of what I already did as I come to think of better or different
-ways to do it. In this first phase, I primarily want and aim to add more and
-more test cases for the new libcurl functions for WebSockets. Only once I have
-those working decently stable, I will switch over to doing something for the
-command line tool.
+I haven't worked a lot on this recently but I hope to get back up to speed and
+to expand the number of tests and make sure I complete the full planned API
+soon. I want to do an initial merge in the next feature window, which is open
+September 5 - 28.
 
-I keep pushing to the remote branch so that the CI jobs can verify that things
-still are okay when websockets are disabled in the build etc.
-
-My hope is that I should be able to offer early beta tests at the end of July
-or so. A little depending on how much vacation I will end up taking during
-this month.
+The feature will be marked **EXPERIMENTAL** and require a special configure
+flag to get enabled to start with anyway so it should be fairly safe.
 
 [Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353) sponsors my WebSockets work.
 
 ## Blog posts
 
-- [curl 7.84.0 inside every box](https://daniel.haxx.se/blog/2022/06/27/curl-7-84-0-inside-every-box/)
-- [Oops, I spilled the beans](https://daniel.haxx.se/blog/2022/06/28/oops-i-spilled-the-beans/)
-- [5 years on OSS-Fuzz](https://daniel.haxx.se/blog/2022/07/01/5-years-on-oss-fuzz/)
+- [How I merge PRs in curl](https://daniel.haxx.se/blog/2022/08/08/how-i-merge-prs-in-curl/)
+- [IPFS and their gateways](https://daniel.haxx.se/blog/2022/08/10/ipfs-and-their-gateways/)
+- [The dream of auto-detecting proxies](https://daniel.haxx.se/blog/2022/08/12/the-dream-of-auto-detecting-proxies/)
 
 ## Coming up
 
-- continued work on WebSockets
-- vacation
+- websockets work
+- agenda work for curl up
+- create my "uncurled" presentation for the 23rd
 
 ## Feedback
 
@@ -92,14 +70,14 @@ this month.
 
 # Older weekly reports
 
-- [June 2022](June-2022.md)
-- [May 2022](May-2022.md)
-- [April 2022](April-2022.md)
-- [March 2022](March-2022.md)
-- [February 2022](February-2022.md)
-- [January 2022](January-2022.md)
-- [December 2021](December-2021.md)
-- [November 2021](November-2021.md)
-- [October 2021](October-2021.md)
-- [September 2021](September-2021.md)
-- [August 2021](August-2021.md)
+## 2022
+
+ [January](January-2022.md), [February](February-2022.md),
+ [March](March-2022.md), [April](April-2022.md), [May](May-2022.md),
+ [June](June-2022.md), [July](July-2022.md)
+
+## 2021
+
+ [August](August-2021.md), [September](September-2021.md),
+ [October](October-2021.md), [November](November-2021.md),
+ [December](December-2021.md)
