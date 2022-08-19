@@ -1,4 +1,84 @@
-# Daniel's weekly report, August 12, 2022
+# Daniel's weekly report
+
+# August 19, 2022
+
+## Coverity
+
+After an upgrade, the code analyzer Coverity seems to have gotten this newly
+found ability to spot issues with time_t and 32 bit in the code and it
+correctly identified a problematic code section we had in SFTP. Actually
+present twice with minor variations, in two different backends.
+
+## Websockets
+
+I had another productive week of improvements to the code. Out of my list of
+**25** bullet points listed in the PR that I have identified we need done
+before we can consider having reached the first milestone, I have now nailed
+**20** of them.
+
+(I spent far too may hours yesterday to debug a regression in the code that
+made the websockets branch break HTTP/2 upgrades.)
+
+Note quite "there" yet, but we certainly have the foundation in place, it
+seems to work decently and I will continue to fill in the remaining blanks in
+the weeks to come.
+
+If anyone has a use case for websockets support today and wants to work with
+me to try out the new websockets API early, I'm very interested in getting in
+touch!
+
+[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353)
+sponsors my WebSockets work.
+
+## Memory-leaks
+
+I have this long-standing task to move away CI jobs from Zuul and make them
+run on other services instead (because [zuul doesn't work good
+enough](https://github.com/curl/curl/issues/9026)) and this week I moved
+another few jobs: namely [torture
+tests](https://everything.curl.dev/internals/tests/torture).
+
+When doing this, I happened to trigger and find no less than *two* separate
+memory-leaks in exit paths in the name resolver code! Fixed now.
+
+## Everything curl
+
+I added a whole new section to the book, explaining and describing all there
+is to say about [tests](https://everything.curl.dev/internals/tests) in the
+curl project.
+
+File format, how to build tests, how to run them, debug builds, test servers,
+different test kinds, CI jobs, autobuilds etc.
+
+## curl up
+
+I am slowly getting the [agenda](https://github.com/curl/curl-up/wiki/2022)
+for curl up 2022 done and I have emailed all speakers to get their commitments
+confirmed to make sure we can deliver on the promises.
+
+There is still time and room to add more intersting stuff!
+
+## Blog posts
+
+- [QUIC and HTTP/3 with wolfSSL](https://daniel.haxx.se/blog/2022/08/15/quic-and-http-3-with-wolfssl/)
+- [The curl release cycle](https://daniel.haxx.se/blog/2022/08/16/the-curl-release-cycle/)
+- [Uncurled - the presentation](https://daniel.haxx.se/blog/2022/08/18/uncurled-the-presentation/)
+- [100,000 words](https://daniel.haxx.se/blog/2022/08/19/100000-words/)
+
+## Coming up
+
+- more websockets work and polish
+- talking up curl up
+- my "uncurled" presentation
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
+# August 12, 2022
+
+## Happened this week
 
 ## vacation
 
