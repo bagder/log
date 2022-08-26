@@ -1,5 +1,81 @@
 # Daniel's weekly report
 
+# August 26, 2022
+
+## curl up 2022
+
+The agenda has been extended with details now and it is starting to look fine.
+
+## Uncurled
+
+I did a live presentation on Tuesday that I called
+[Uncurled](https://daniel.haxx.se/blog/2022/08/18/uncurled-the-presentation/)
+with me talking about what people can expect when running Open Source projects
+and how I think you can run such proejcts (there's a video on the page the
+link takes you). Of course based a lot on the contents of my
+[book](https://un.curl.dev/) with the same name.
+
+As a direct result of questions I received and topics that was brought to the
+top of my mind when doing this, I then extended the book with more contents in
+the week. I added a few entirely new sections and enhanced a few. I also fired
+up a new crontab job and now I offer a PDF version of the book, updated daily,
+[here](https://daniel.haxx.se/uncurled/).
+
+Uncurled is now 23,100 words long.
+
+## Funding
+
+I had a great meeting with a European organization that is interested in
+funding and improving infrastructure Open Source projects, and curl meets the
+criteria. We are moving forward with some ideas on how it can and should be
+done so that both sides are happy and get the most out of it. Fingers
+crossed. I will of course give you all more details when I can and if the
+ducks end up in the right order.
+
+## Android follow-up
+
+Back in [April](April-2022.md) I mentioned a complicated and hard-to-debug
+problem one of my customers experienced with libcurl with their large volume
+app on Android. This has now finally turned out to be... not a problem in
+libcurl at all, but was found to be a flaw in adjacent code. Hooray for us.
+
+## Websockets
+
+I am now down to only one unchecked checkbox for what I need to do in
+[pull-request](https://github.com/curl/curl/pull/8995). It is looking good for
+a merge when the feature window opens after the coming release.
+
+One of the reasons there is only one checkbox left is that I have postponed a
+few things to instead split up the work and to a subset of the work after the
+initial release: in particular I am thinking about adjustments for the curl
+tool and some more. My hope is that the initial merge will trigger some early
+users to try it out and give feedback so that we can smoothen out rough
+corners and perfect it that way - a in parallel with further development.
+
+[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353)
+sponsors my WebSockets work.
+
+## Pending release
+
+The 210th curl release is scheduled for next week. One CVE will be announced
+in assocation with the release. I will do a release video presentation live as
+usual on the Wednesday.
+
+## Blog posts
+
+- [Increased CVE activity in curl?](https://daniel.haxx.se/blog/2022/08/22/increased-cve-activity-in-curl/)
+- [What if I vanished?](https://daniel.haxx.se/blog/2022/08/24/what-if-i-vanished/)
+- [curl up 2022 take 2](https://daniel.haxx.se/blog/2022/08/26/curl-up-2022-take-2/)
+
+## Coming up
+
+- more websockets work and polish
+- curl 7.85.0 release on Aug 31
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # August 19, 2022
 
 ## Coverity
