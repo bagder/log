@@ -1,5 +1,69 @@
 # Daniel's weekly report
 
+# September 9, 2022
+
+## WebSockets
+
+I have merged the first [WebSockets](https://curl.se/docs/websockets.html)
+take into the curl master branch. You need to enable it explicitly in the
+build to get it, but I hope lots of people do and try it out and give me
+feedback.
+
+There are several outstanding issues to do to make the WebSockets support
+really good, but now at least this significant first step has been
+taken. Thanks for flying curl.
+
+[Corellium](https://twitter.com/CorelliumHQ/status/1539277242886500353)
+sponsors my WebSockets work.
+
+## talk
+
+I did a talk called "rust in curl" for a local FOSS-sthlm meetup on Thursday.
+
+## curl up 2022
+
+[curl up 2022](https://github.com/curl/curl-up/wiki/2022) happens next week. I
+have recorded my four presentations already and I will make them available for
+viewing already early next week. I will also link to the slides.
+
+## URL parser
+
+My URL parser cleanup and speedup work was merged. It runs slightly faster,
+with fewer and smaller mallocs using fewer lines of code.
+
+As a side-effect of my polishing the URL parser, I decided to look into the
+ctype functions we use in curl and I optimized them as well... when doing that
+optimization I fell over and fixed two related issues: I found some leftover
+use of the extern ctype funcitons and I also realized that curl was using
+allowing control codes in far too many parsers when it should rather only
+allow spaces and tabs.
+
+Another side-effect of my adventures in the URL parser was the creation of the
+`http://http://http://@http://http://?http://#http://` URL and [my
+tweet](https://twitter.com/bagder/status/1567162794092404742) got an amazing
+attention.
+
+a side-effect of me cleaning up a lot of whitespace parsers, I broke a
+critical function that parses numbers which triggered a OSS-fuzz report so I
+got to work on that as well.
+
+Domino effects are real.
+
+## Blog posts
+
+- [A bug that was 23 years old or not](https://daniel.haxx.se/blog/2022/09/05/a-bug-that-was-23-years-old-or-not/)
+- [http://http://http://@http://http://?http://#http://](https://daniel.haxx.se/blog/2022/09/08/http-http-http-http-http-http-http/)
+
+## Coming up
+
+- code audit status meeting on Tuesday
+- curl up 2022 on Thursday
+- continued work on more WebSockets things
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # September 2, 2022
 
 ## curl up 2022
