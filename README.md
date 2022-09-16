@@ -1,5 +1,56 @@
 # Daniel's weekly report
 
+# September 16, 2022
+
+## curl up
+
+The zoom session went on for a little over eight hours straight, during which
+we crammed in **ten** presentations on curl and related technologies.
+
+I always love curl up - hanging out and talking curl internals, details,
+specifics, bugs and dreams with a bunch of friends. It is the best event of
+the year, no doubt.
+
+Most of the talks and slides are already provided on the [agenda
+page](https://github.com/curl/curl-up/wiki/2022)
+
+Exhausting.
+
+## printers
+
+It's funny how libcurl is big in printers and I had a meeting with a new
+customer (who shall remain unnamed) and I could help them with a range of
+direct and specific advice on how to optimize their libcurl use to address
+their problems and improve their performance. A very productive 30 minutes I
+would say.
+
+## audit
+
+The curl security audit work is ongoing. We have regular meetings with Trail
+of Bits for status updates and providing feedback and insights.
+
+## funding
+
+I now have a more detailed project description with times and costs and
+everything for the three curl projects I hope to get funded. We are on track
+and I expect that we can get everything agreed to and signed not too far into
+the future - then I will of course let you know more details. I am so looking
+forward to this!
+
+## Blog posts
+
+- [convert a curl cmdline to libcurl source code](https://daniel.haxx.se/blog/2022/09/12/convert-a-curl-cmdline-to-libcurl-source-code/)
+
+## Coming up
+
+- more funding back-and-forth
+- audit meetings
+- continue on the WebSocket journey
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # September 9, 2022
 
 ## WebSockets
