@@ -37,6 +37,13 @@ and I expect that we can get everything agreed to and signed not too far into
 the future - then I will of course let you know more details. I am so looking
 forward to this!
 
+## HTTP/3 Explained
+
+I started writing my book *HTTP/3 explained* in February 2018 and it has been
+mostly complete and done for a long time now. This week however the awesome
+Marcos Medrano appeared from the shadows and brought us the brand new [Español
+version](https://http3-explained.haxx.se/es)!
+
 ## Blog posts
 
 - [convert a curl cmdline to libcurl source code](https://daniel.haxx.se/blog/2022/09/12/convert-a-curl-cmdline-to-libcurl-source-code/)
