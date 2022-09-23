@@ -99,8 +99,8 @@ HTTP/2 servers out there that send trailing whitespace in their header fields
 and nghttp2 returned error on that and refused to cooperate.
 
 One of the offenders is the perhaps not too unknown service called
-[WordPress](https://wordpress.com/), which then by extension made that a few
-super popular RSS feeds also did not work. Like the one of [Bruce
+[WordPress](https://wordpress.com/), which then by extension made a few super
+popular RSS feeds also not work. Like the one of [Bruce
 Schneier](https://www.schneier.com/) etc.
 
 After some frustrated ventilation on Twitter and some extremely helpful
