@@ -64,7 +64,7 @@ until I can tell you all about it!
 While I am still waiting for my curl up swag to arrive, I got a huge box of
 brand new swag from GitHub that included a led-octocat think that can light up
 and flash in colours and patterns and more. Perks from being [a github
-start](https://stars.github.com/profiles/bagder/).
+star](https://stars.github.com/profiles/bagder/).
 
 ## cheat sheet
 
@@ -136,7 +136,7 @@ I expect there to be stuff. Hopefully not earth-shattering though.
 
 ## Coming up
 
-- Masssaging the WebSocket API to work with large frames
+- Massaging the WebSocket API to work with large frames
 - curl feature freeze on Wednesday
 
 
