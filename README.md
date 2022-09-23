@@ -86,7 +86,8 @@ specific language on how to treat HTTP header fields:
 
 This language was turned into more strict checks in the very popular and
 widely used [nghttp2 library](https://github.com/nghttp2/nghttp2), first
-released to the public in its version 1.49.0 on August 22, 2022.
+released to the public in its version 1.49.0 on August 22, 2022. curl of
+course uses nghttp2 for its support of HTTP/2.
 
 It can be noted that other widely used HTTP/2 clients, like the popular major
 browsers for example, do not care about this rule violation in spite of what
