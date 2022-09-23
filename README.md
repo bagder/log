@@ -1,5 +1,150 @@
 # Daniel's weekly report
 
+# September 23, 2022
+
+## spellchecks
+
+Adding a CI job that runs a spellchecker on the entire set of libcurl man
+pages turned out to be a monster job, but I pulled it through and I think it
+turned out pretty good. And I did several hundred documentation fixes in the
+same pull request.
+
+It also made me do some additonal follow-up improvements of other scripts that
+verify the documentation. All in an effort to make typos and mistakes less
+frequent.
+
+## API discussions
+
+It's been one of those weeks when several API design discussions have popped
+up. One is around how to manage name resolving and doing graceful fallback
+down to IPv4-only when IPv6 doesn't work properly, one is around
+`curl_multi_poll()` and what to do with negative timeout values and the third
+that was brought up is how to improve the WebSocket API to work with (much)
+larger frames than it currently does as I have been told they are quite common
+in practise so my "shortcut" of only supporting smaller ones is going to put
+too many hurdles in the way for real adoption.
+
+These issues are being discussed and some of them might leed to tweaks going
+forward. Designing (good) APIs is really hard.
+
+## C99
+
+curl is still written using C89. We have discussed maybe add a future
+requirement of having a 64 bit data type (`long long`) which virtually every
+compiler and system has since a long time back - and was made a standard in C
+in C99. Maybe a good time to do this requrement bump would be when curl turns
+25, this coming spring.
+
+That thought subsequently brought up the discussion if we should perhaps
+consider doing a jump up to **C99** as the new compliance level for curl code
+while we are at it.
+
+Would then then accept everything C99 allows or would we want to treat gently
+and slowly accepting more? Is it even a good idea and does it really bring
+much features we *need*? Will it cut off compatibility with some ancient
+systems that a few people still build curl on?
+
+The jury is still out on C99, but I personally think that the 64 bit data type
+requirement feels like something I want: I believe the code will be easier to
+manage if we can assume that the large data type is always larger than 32
+bits. I doubt we can find many users still stuck on systems that do not have
+64 bit types - who also need to build the latest curl.
+
+Tell me your thoughts on this!
+
+## funding
+
+The idea is now to have the contracts finalized and signed mid-October. We are
+going to sub-contract someone else than me as well to do work on curl using
+this funding and I am super-thrilled over this opportunity and I can't wait
+until I can tell you all about it!
+
+## swag
+
+While I am still waiting for my curl up swag to arrive, I got a huge box of
+brand new swag from GitHub that included a led-octocat think that can light up
+and flash in colours and patterns and more. Perks from being [a github
+start](https://stars.github.com/profiles/bagder/).
+
+## cheat sheet
+
+Something triggered me to check out the good old curl HTTP cheat sheet, so I
+created a minor update with curl colors and some minor text fixes:
+
+[<img src="https://pbs.twimg.com/media/Fc_w1quWAAM4VUp?format=jpg&name=large" width=500>](https://curl.github.io/curl-cheat-sheet/http-sheet.html)
+
+I still want to make a tshirt with this printed up-side-down on the front, so
+that you can look down on your shirt for the hints...
+
+## whitespace
+
+When [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113.html), the updated
+HTTP/2 specification, was published in June 2022, it included new very
+specific language on how to treat HTTP header fields:
+
+    A field value MUST NOT start or end with an ASCII whitespace character
+    (ASCII SP or HTAB, 0x20 or 0x09).
+
+This language was turned into more strict checks in the very popular and
+widely used [nghttp2 library](https://github.com/nghttp2/nghttp2), first
+released to the public in its version 1.49.0 on August 22, 2022.
+
+It can be noted that other widely used HTTP/2 clients, like the popular major
+browsers for example, do not care about this rule violation in spite of what
+the RFC says.
+
+It did not take long until curl and libcurl users reported the first problems:
+sites and services stopped working. It turns out there are quite a lot of
+HTTP/2 servers out there that send trailing whitespace in their header fields
+and nghttp2 returned error on that and refused to cooperate.
+
+One of the offenders is the perhaps not too unknown service called
+[WordPress](https://wordpress.com/), which then by extension made that a few
+super popular RSS feeds also did not work. Like the one of [Bruce
+Schneier](https://www.schneier.com/) etc.
+
+After some frustrated ventilation on Twitter and some extremely helpful
+individuals who passed on the message appropriately, [Wordpress fixed their
+issue](https://twitter.com/wordpressdotcom/status/1572587600652955649).
+
+On that same day (September 21), nghttp2 released an update. [Version
+1.50.0](https://github.com/nghttp2/nghttp2/releases/tag/v1.50.0) comes with a
+new option to disable the strict header check, and curl will use this option
+if available. curl has however not yet done a release with that additional
+logic, so even if nghttp2 now can disable the check, no released curl version
+does that yet. The coming curl release is planned to be **7.86.0** and is
+scheduled to ship on **October 26**.
+
+## Vulnerability
+
+We have received a security report about an existing vulnerability that we
+have confirmed. Probably at severity **medium**. Yet another one of those
+problems that have been around in the code for decades. I believe this might
+be at least close to twenty years old.
+
+## Audit
+
+The curl security audit is continuing and we have regular meetings with status
+and back-and-forth discussions and comments. They have not yet found anything
+alarming but I suspect it is just a matter of time. After all, they spend
+several hundreds of man hours starring and digging deep into these details so
+I expect there to be stuff. Hopefully not earth-shattering though.
+
+## Blog posts
+
+- [Taking curl documentation quality up one more notch](https://daniel.haxx.se/blog/2022/09/22/taking-curl-documentation-quality-up-one-more-notch/)
+
+## Coming up
+
+- Masssaging the WebSocket API to work with large frames
+- curl feature freeze on Wednesday
+
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
+
 # September 16, 2022
 
 ## curl up
