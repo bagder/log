@@ -69,9 +69,8 @@ start](https://stars.github.com/profiles/bagder/).
 ## cheat sheet
 
 Something triggered me to check out the good old curl HTTP cheat sheet, so I
-created a minor update with curl colors and some minor text fixes:
-
-[<img src="https://pbs.twimg.com/media/Fc_w1quWAAM4VUp?format=jpg&name=large" width=500>](https://curl.github.io/curl-cheat-sheet/http-sheet.html)
+created a minor [update with curl colors and some minor text
+fixes](https://curl.github.io/curl-cheat-sheet/http-sheet.html)
 
 I still want to make a tshirt with this printed up-side-down on the front, so
 that you can look down on your shirt for the hints...
