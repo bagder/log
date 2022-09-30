@@ -12,7 +12,7 @@ platforms that lack a 64 bit data type.
 This is not to be confused with 64 bit systems. curl will continue to build
 and run on the vast majority of all 32 bit systems even in 2023 (and for the
 foreseeable future really). 64 bit **data types** were introduced to the C
-languge in the shape of `long long` for well over two decades ago and have
+language in the shape of `long long` for well over two decades ago and have
 been supported by (C89) compilers since then. It was first made a standard in
 C99.
 
@@ -28,7 +28,7 @@ become a problem of the past.
 
 The discussion continues on the curl-library list how or if we should create a
 way for libcurl users to have a system-level and an app-level so that "apps"
-can be controled by the system and the system can set options and prevent apps
+can be controlled by the system and the system can set options and prevent apps
 from setting options etc.
 
 Still in a brain-storming state but it might lead to something fun.
@@ -41,7 +41,7 @@ are needed for `recv` and `send`. The system will now instead default to the
 POSIX types and feature arch-specific manually crafted `#ifdef` sections for
 those systems that need something else.
 
-This simplies the selection, makes it easier to understand, removes a lot of
+This simplifies the selection, makes it easier to understand, removes a lot of
 hairy detection logic from two places and also make configure and cmake faster
 to execute.
 
@@ -76,7 +76,7 @@ ping and let's make it happen.
 ## Coming up
 
 - Make the WebSocket API work with large frames (still)
-- HTTPbis internim meeting late Wednesday
+- HTTPbis interim meeting late Wednesday
 - curl security audit final week
 - curl presentation for a Stockholm based company Wednesday
 
