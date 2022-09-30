@@ -1,5 +1,85 @@
 # Daniel's weekly report
 
+# September 30, 2022
+
+## Deprecating no-64bit-data-type
+
+The discussions on the pros and cons with C99 for curl continue and we have
+not made any decisions about it. We have however taken the stance that
+starting in curl version 8 (March 2023) we will no longer build curl on
+platforms that lack a 64 bit data type.
+
+This is not to be confused with 64 bit systems. curl will continue to build
+and run on the vast majority of all 32 bit systems even in 2023 (and for the
+foreseeable future really). 64 bit **data types** were introduced to the C
+languge in the shape of `long long` for well over two decades ago and have
+been supported by (C89) compilers since then. It was first made a standard in
+C99.
+
+We are in fact not aware of any system/compiler still in use by curl users
+that fall outside of this requirement, so it is likely to hurt extremely
+few. If even any.
+
+The upsides include that the code will be easier to maintain because we can
+safely rely on a simpler world and the gap in testing for such platforms
+become a problem of the past.
+
+## system vs app
+
+The discussion continues on the curl-library list how or if we should create a
+way for libcurl users to have a system-level and an app-level so that "apps"
+can be controled by the system and the system can set options and prevent apps
+from setting options etc.
+
+Still in a brain-storming state but it might lead to something fun.
+
+## functypes
+
+This week I landed a change in curl that removed rather tedious checks from
+configure and cmake, introduced to detect what function argument types that
+are needed for `recv` and `send`. The system will now instead default to the
+POSIX types and feature arch-specific manually crafted `#ifdef` sections for
+those systems that need something else.
+
+This simplies the selection, makes it easier to understand, removes a lot of
+hairy detection logic from two places and also make configure and cmake faster
+to execute.
+
+## feature freeze
+
+curl entered feature freeze on Wednesday with four weeks left to the pending
+release and now we focus on only merging bugfixes. We have one CVE pending to
+get announced and we have already merged over a hundred bugfixes.
+
+October 26 is the scheduled released date for **7.86.0**.
+
+## audit
+
+Our friends at Trail of Bits continue their review of curl into next week and
+is expected to end it next Friday. This far, they have not found *any*
+security sensitive fault or error. If that is what we end up with by the end
+of next week, I think we will have reason for celebrations. Still, they have a
+whole week of more digging left to find issues. I am both scared and hopeful
+at the same time.
+
+## Oxford meetup
+
+I will be in Oxford, UK, in the beginning of November 2022 for the HTTP
+Workshop and I figured it would be fun to arrange a mini curl meetup while
+there. If you are in the area and think this sounds interesting, give me a
+ping and let's make it happen.
+
+## Blog posts
+
+- [The first 300 setopts](https://daniel.haxx.se/blog/2022/09/28/the-first-300-setopts/)
+
+## Coming up
+
+- Make the WebSocket API work with large frames (still)
+- HTTPbis internim meeting late Wednesday
+- curl security audit final week
+- curl presentation for a Stockholm based company Wednesday
+
 # September 23, 2022
 
 ## spellchecks
