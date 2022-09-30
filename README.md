@@ -80,6 +80,10 @@ ping and let's make it happen.
 - curl security audit final week
 - curl presentation for a Stockholm based company Wednesday
 
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # September 23, 2022
 
 ## spellchecks
