@@ -5,7 +5,7 @@
  [January](January-2022.md), [February](February-2022.md),
  [March](March-2022.md), [April](April-2022.md), [May](May-2022.md),
  [June](June-2022.md), [July](July-2022.md), [August](August-2022.md),
- [September](README.md)
+ [September](September-2022.md), [October](README.md)
 
 ## 2021
 
