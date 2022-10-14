@@ -1,5 +1,74 @@
 # Daniel's weekly report
 
+# October 14, 2022
+
+## security
+
+Debris and tidbits from the security audit have kept me busy this week again.
+Trail of Bits reported several bugs and discrepancies that we worked on
+fixing. So far their work has (fortunately) only resulted in a single CVE. In
+addition to the three ones reported by others, it makes a total of **four**
+pending CVEs for the next release. Severity levels medium and low.
+
+A few issues have taken a lot effort to assess the impact of, to make the call
+whether they are security problems. My goal is to make sure that all known
+security issues are fixed and get announced in sync with the next release and
+right now that seems to hold.
+
+Trail of bits have completed their audit now and their final report is due any
+day now. We will make everything public as soon as we can - once all possibly
+security-related issues have been dealt with. My early take: no major problems
+found but (some) areas can be improved.
+
+To complicate matters and my life a little extra, HackerOne decided to act up
+this week: we normally use their service to request CVE Ids for issues. It is
+usually convenient and seamless as the system for it is integrated with their
+issue tracker. This time however, the system first denied me a new CVE last
+week for one of the issues we have and then *again* this week when I tried it
+again and requested a CVE for a different issue still in need of one. The
+HackerOne support has always been great in the past but unfortunately they
+disappointed me this time to the degree that I decided to run over and request
+two CVEs directly from MITRE instead. Which worked swiftly and effectively.
+
+I want to pre-notify the distros@openwall next week and I want the CVEs
+assigned by then so that I can make sure all the documentation and records in
+our end are clear.
+
+HackerOne support still has not gotten back to me about this issue.
+
+Counting this last batch, we are at a total of 130 CVEs assigned for curl
+through-out history.
+
+## eurorust
+
+I talked "rust in curl" at the [eurorust](https://eurorust.eu) conference on
+Thursday. It was a in-person conference in Berlin but I did my talk
+remotely. Got a lot of attention and several good questions from an interested
+audience.
+
+## tiny-curl
+
+I know, I said last week I would do a tiny-curl release this week but it did
+not happen. I haven't forgotten, I just felt I had to prioritize other
+things. Maybe it will be delayed another week.
+
+## Blog posts
+
+- [There is a tab in my cookie](https://daniel.haxx.se/blog/2022/10/14/there-is-a-tab-in-my-cookie/)
+- [Rewriting curl in three days](https://daniel.haxx.se/blog/2022/10/14/rewriting-curl-in-three-days/)
+
+## Coming up
+
+- "The fund" deal is about to get signed and I hope to announce details soon
+  about three exciting curl projects we will work on for the coming six
+  months. Stay tuned.
+  
+- I will be doing two in-person talks i Östersund, Sweden, next week.
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # October 7, 2022
 
 ## security
