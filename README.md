@@ -1,5 +1,68 @@
 # Daniel's weekly report
 
+# October 21, 2022
+
+## funding
+
+This week it was finally made public: the Sovereign Tech Fund out of Germany
+is funding three separate curl projects to be done over the coming six
+months. I will do one of them and Stefan Eissing steps in and will handle two
+of them. I'm thrilled to be able to get this dedicated time and effort to
+improve curl further the coming months.
+
+I [blogged lots of details](https://daniel.haxx.se/blog/2022/10/19/funded-curl-improvements/) about the selected projects.
+
+## man page
+
+In an attempt to make the man page for the curl tool more explicit and clear
+about what happens when you specify command line options more than once, I
+made this piece of information mandatory for each option. This way, the
+generated output clearly mentions for them all if they can be specified
+multiple times etc. I had to go through all the 248 existing options in a long
+tedious session to make sure that metadata is set for each of them. In the end,
+the resulting man page grew with some 400 lines or so.
+
+Since this metadata now is mandatory - leaving it out causes a build failure -
+it means that when we add new command line options in the future, this
+information has to be provided.
+
+## bugfixes
+
+We have kept up the pace of bugfixes through the last week as well and we are
+now looking at a possible new project record amount of bugfixes in a single
+release in the coming 7.86.0.
+
+## security
+
+On Monday I notified the distros@openwall mailing list about our pending CVE
+announcements.
+
+The security audit has now ended and I believe every issue they found have
+been addressed now, and the single security related one is being as a CVE in
+the release next week.
+
+## oss-fuzz
+
+We merged a whole bunch of new fuzzer code into OSS-Fuzz almost a week ago to
+make it fuzz more options and more curl parsers. This was one of the direct
+results of good work from Trail of Bits. I was a little scared of what that
+would do to us, but to my amazement they have not triggered even a single new
+report so far.
+
+## Blog posts
+
+- [Deviating from specs](https://daniel.haxx.se/blog/2022/10/18/deviating-from-specs/)
+- [Funded curl improvements](https://daniel.haxx.se/blog/2022/10/19/funded-curl-improvements/)
+
+## Coming up
+
+- release preparations
+- curl 7.86.0 ships on Wednesday
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # October 14, 2022
 
 ## security
