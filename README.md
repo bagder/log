@@ -1,5 +1,73 @@
 # Daniel's weekly report
 
+# October 28, 2022
+
+## funded projects
+
+Stefan and I have started our projects funded by [the Sovereign Tech
+Fund](https://sovereigntechfund.de/en) and we are now doing weekly sync
+meetings. Yay for being in the same time zone! It feels great to have started
+this and we have agreed to make our changes as normal pull-requests as soon as
+we feel we have changes to merge. The results of these our funded projects
+should therefore gradually improve curl during the coming six months.
+
+## release
+
+I put the curl version 7.86.0 release together on Wednesday and it felt really
+good. We fixed **192** bugs in this release, which is a new project record for
+a single curl release. We did this using more than 310 commits, which is more
+than any other release since some time in 2016. Clearly a busy period in the
+curl project. We have merged more than 3 bugfixes per day on average over the
+last twelve months.
+
+We included fixes to four new [security
+vulnerabilities](https://curl.se/docs/security.html). One of those was the
+direct result of the Trail of Bits security audit. That audit has been
+concluded, but I have not yet received their final report. I believe all
+issues they found have been fixed though so we can probably publish the report
+more or less at once when they eventually deliver it to us.
+
+## bugs
+
+It only took a day until [the first regression was
+reported](https://github.com/curl/curl/issues/9813) in the new release. The
+discussion on whether this is reason enough to make a follow-up patch release
+has started and that in turn made me start a document draft on how to go about
+and decide if [an early release](https://github.com/curl/curl/pull/9820)
+should get done. I wish we could make clear guidelines that would better help
+us say **YES** or **NO** in a binary fashion, but there are just too many
+unknowns, estimates, guesses and personal feelings involved for that. In the
+end it will be up to us maintainers to decide. In this particular regression
+case we have now, no decision has been made yet.
+
+(and yes, **I** caused the regression)
+
+## HTTP Workshop
+
+Next week, [The HTTP Workshop](https://httpwork.shop/) takes places in Oxford,
+England and I will be there. We have had several of these workshops in the
+past and I've enjoyed them greatly. Lots of HTTP implementers present with
+deep dive discussions about the inner workings and forgotten corners of all
+versions of HTTP.
+
+I will try to blog about what takes place, learn from the others of what news
+and development that is worthy takeaways for what can and should be transferred
+over into improving curl and I always, always, feel that I am there to
+represent and stand up for the world of HTTP clients that are not browsers.
+Because few of the other people present are going to. I often need to remind
+everyone that HTTP clients are a lot more than "just" browsers and I often
+feel I have a much more "bare bones" attitude to what the protocol is and what
+is important for it. And when things are being discussed or considered that
+really maybe are too much "browser attitudes" being leaked into the protocols.
+
+## Blog posts
+
+- [curl 7.86.0 with WebSocket](https://daniel.haxx.se/blog/2022/10/26/7-86-0-with-websocket/)
+
+## Coming up
+
+- Continue to reduce known bugs in curl
+
 # October 21, 2022
 
 ## funding
