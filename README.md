@@ -22,9 +22,9 @@ plenty of time to make sure we fix it correctly.
 
 ## Blog posts
 
-- [HTTP Workshop 2022 – day 1]()
-- [Workshop season 5 episode 2]()
-- [thehttpworkshop2022-day3.txt]()
+- [HTTP Workshop 2022 – day 1](https://daniel.haxx.se/blog/2022/11/02/http-workshop-2022-day-1/)
+- [Workshop season 5 episode 2](https://daniel.haxx.se/blog/2022/11/03/workshop-season-5-episode-2/)
+- [thehttpworkshop2022-day3.txt](https://daniel.haxx.se/blog/2022/11/03/thehttpworkshop2022-day3-txt/)
 
 ## Coming up
 
