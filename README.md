@@ -1,5 +1,61 @@
 # Daniel's weekly report
 
+# November 18, 2022
+
+## merging
+
+While my mission right now is to reduce the amount of known bugs, this week
+has been more in the spirit of making sure we don't add more bugs to that list
+as I've mostly worked on merging PRs and fixing issues. The feature window
+closes next week so I consider it a courtesy to try to merge most of the
+fine-looking PRs before then, and then ramp up my bug-fixing after that.
+
+Right now it looks like there might not be any more changes merged for the
+next release.
+
+## audit
+
+While the audit is completed, we had a meeting with Trail of Bits to discuss
+the final steps and eventual publication date. I worked on documentating how
+we have dealt with each and every one of the remarks in the report. Right now
+we are aiming at doing it in sync with the next release: on December 21.
+
+## interview
+
+I did an interview on Wednesday with a German tech reporter discussing the
+Sovereign Tech Fund's curl funding and what it means for the project. I'll
+link you when it goes live. Yes, it will be in German.
+
+## podcast
+
+I participated/recorded a video podcast episode of [Fairlight
+TV](https://youtu.be/gNWg2Wtxz-w) talking a lot about my early Commodore C64
+days and background doing demo programming, in addition to more modern things
+like curl and getting the Polhem Prize.
+
+## FOSDEM
+
+I have booked and made arrangements to attend FOSDEM 2023 in Brussels in
+February 2023; my favorite conference. I have not proposed a talk this year,
+but this is mostly because I have not really felt inspired or found a suitable
+topic and room. If you have a good idea for something I could contribute with
+there that isn't a complete rerun of other talks I've done in FOSDEM already,
+let me know.
+
+## Blog posts
+
+- [connection filters in curl](https://daniel.haxx.se/blog/2022/11/15/connection-filters-in-curl/)
+- [Considering C99 for curl](https://daniel.haxx.se/blog/2022/11/17/considering-c99-for-curl/)
+
+## Coming up
+
+- Feature window closing on Wednesday
+- [curl is everywhere](https://www.meetup.com/jforum-stockholm/events/289354203/) presentation on Thursday in Stockholm
+
+## Feedback
+
+[Comment here](https://github.com/bagder/log/discussions)
+
 # November 11, 2022
 
 ## Known bugs reduction
