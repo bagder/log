@@ -1,5 +1,45 @@
 # Daniel's weekly report
 
+# November 25, 2022
+
+## feature freeze
+
+We entered feature freeze this week for curl, so there is no more new features
+or "changes" merged now until after the coming release due to happen on
+December 21. Now is the bugfix-only season. We already count **82** bugfixes
+landed in master since the last release queued up for 7.87.0.
+
+## security
+
+I have reserved two new CVE Ids for two confirmed curl vulnerabilities. This
+week I wrote up the patches and the first security advisory drafts for them,
+but as they will get published in sync with the pending release there is no
+hurry and I have a little more time to polish my wording.
+
+## talk
+
+This Thursday I attended a local meetup here in Stockholm and talked about
+curl for maybe 70 persons and it was a blast. Lots of good questions followed
+and there were several friendly conversations in the pub we continued at after
+the presentation.
+
+I was asked to participate in at least five selfies after my talk. More than I
+have ever done before and a kind of attention I am not used to...
+
+## birthday
+
+I turned yet another year older this week. I have now officially worked on
+curl and its precursors during half of my life.
+
+## Blog posts
+
+- [89 operating systems](https://daniel.haxx.se/blog/2022/11/25/89-operating-systems/)
+
+## Coming up
+
+- Reduce the number of known bugs
+- A write-up on how curl can/should support HTTPS DNS records
+
 # November 18, 2022
 
 ## merging
