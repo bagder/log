@@ -18,10 +18,10 @@ hurry and I have a little more time to polish my wording.
 
 ## talk
 
-This Thursday I attended a local meetup here in Stockholm and talked about
-curl for maybe 70 persons and it was a blast. Lots of good questions followed
-and there were several friendly conversations in the pub we continued at after
-the presentation.
+On Thursday, I attended a local meetup here in Stockholm and talked about curl
+for maybe 70 persons and it was a blast. Lots of good questions followed and
+there were several friendly conversations in the pub we continued at after the
+presentation.
 
 I was asked to participate in at least five selfies after my talk. More than I
 have ever done before and a kind of attention I am not used to...
