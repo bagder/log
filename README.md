@@ -1,5 +1,65 @@
 # Daniel's weekly report
 
+# December 9, 2022
+
+## base64
+
+I accidentally fell over and drastically improved base64 encoder and decoder
+performance. It was of course properly satisfying, even if it mostly
+identified existing slow code rather than me doing something magic. See my
+blog post for all the details.
+
+## dev machine
+
+As I revealed numbers from my base64 endeavors mentioned above, it become
+evident that my current dev machine is not very fast. I suspect it being ten
+years old kind of gives that away but still. I got some help and I have
+ordered a new one as a set of components. I will of course get back with all
+the details and a full report about how much faster I can build curl once the
+upgrade has been performed.
+
+## FOSDEM
+
+FOSDEM announced the [accepted
+stands](https://fosdem.org/2023/news/2022-12-08-accepted-stands-fosdem-2023/)
+for 2023, and wolfSSL is listed. I plan on making sure that there will be curl
+stickers there for all those who want some and fail to catch me at the event.
+
+## hyper
+
+I managed to circle back to hyper issues and we have now enabled another test
+case for the hyper builds. Ironically, we are now back down to 13 disabled
+tests, which happened to be exactly where we were at in May as well.... Ups
+and downs.
+
+## known bugs
+
+I've continued to clean up the list of "known bugs" and decimated the amount
+further this week. Not so much by actually fixing code but more by documenting
+facts and by simply closing things we haven not heard about for decades.
+
+## websocket
+
+I feel I have neglected this area recently and I hope to come around back to
+Websocket again soon so that we can continue to polish it. I still wish we had
+more interested users actually testing it out, but I will of course still go
+with what we have.
+
+## everything curl
+
+I wrote a brand new page explaining [how we work with timeouts
+internally](https://everything.curl.dev/internals/timeouts) in libcurl, for
+the *internals* sections of [everything curl](https://everything.curl.dev/).
+
+## Blog posts
+
+ - [Faster base64 in curl](https://daniel.haxx.se/blog/2022/12/06/faster-base64-in-curl/)
+
+## Coming up
+
+- pre-alert the distros mailing list about two coming curl CVEs
+- slowly start preparing for the curl release
+
 # December 2, 2022
 
 ## 5-digit issue numbers
