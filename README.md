@@ -1,5 +1,47 @@
 # Daniel's weekly report
 
+# December 16, 2022
+
+## Release prep
+
+I have worked on the curl release blog post this week to highlight the most
+significant activities we did since the previous release, as usual. The slides
+for the release video presentation are also nearly done. Things are lining up
+nicely. Two new CVEs will be published in association with the release,
+severity medium and low.
+
+## Security audit
+
+The audit report is finally going to get published next week, on the same day
+of the pending curl release, only later in the day so that the Americans that
+are involved get time to wake up first. Stay tuned for blog posts and
+announcements on Wednesday.
+
+## IDN
+
+I toyed a little with IDN this week, one result being the blog post about how
+crazy this system is. It also made me realize that we probably want to allow
+the libcurl URL API to the punycode version of a given URL or host name using
+an IDN hostname so that users at least can attempt to get a canonical version
+of a given URL. I am going to work on adding this feature for a future
+release.
+
+## Mastodon
+
+I am decreasing my activity on [Twitter](https://twitter.com/bagder) and
+increasing in on [Mastodon](https://mastodon.social/@bagder). Follow me over
+to keep the noise about curl, networking, URLs and more uninterrupted.
+
+## Blog posts
+
+- [curl sighting: Silk Road](https://daniel.haxx.se/blog/2022/12/10/curl-sighting-silk-road/)
+- [IDN is crazy](https://daniel.haxx.se/blog/2022/12/14/idn-is-crazy/)
+
+## Coming up
+
+- curl 7.87.0 release
+- security audit report gets published
+
 # December 9, 2022
 
 ## base64
