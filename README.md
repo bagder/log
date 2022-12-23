@@ -1,5 +1,64 @@
 # Daniel's weekly report
 
+# December 23, 2022
+
+## Merry Christmas
+
+This is the Christmas episode of Daniel's weekly, and I will probably be
+slower than usual next week. I do not do any yearly summaries for curl around
+new year as I rather sum them up later in the spring around our curl up
+event. You can of course view lots of activity graphs yourself on [the curl
+dashboard](https://curl.se/dashboard.html).
+
+## Release
+
+I pushed out the curl 7.87.0 release on December 21. We have received a few
+early bug reports, some of them identifying regressions, but so far they have
+been innocuous enough to not force us into a patch release. The final decision
+on re-opening the feature window will be done late Sunday my time.
+
+The next curl release, most likely to called 7.88.0, is also planned to become
+the last ever curl version 7 release. Release date February 15, 2023.
+
+The plan is then to ship curl 8.0.0 on March 20, 2023. Between 7.88.0 and
+8.0.0 there will not be any open feature window.
+
+## Audit
+
+The security audit report finally went public this week, and while there was
+no alarming issues or news in there, I still feel happy about it and now the
+world can check it out and maybe get seem help on how to assess our little
+project.
+
+## IDN article
+
+I translated my "IDN is crazy" blog post into Swedish and polished it somewhat
+and with some help it might soon get included in a local tech related
+magazine. Possibly even in a print version I suspect. I will of course brag
+about it later when/if it actually happens.
+
+## Security
+
+Did I mention that security is hard? I had basically just sent off the release
+announcements for 7.87.0 and was still sitting with my feet up when new
+security vulnerability reports landed in our knees and now we already have two
+new security problems confirmed. They are both set to severity levels lower
+than high so they are targeted for getting fixed and announced with the next
+planned release.
+
+## Blog posts
+
+ - [curl sighting: Tschugger](https://daniel.haxx.se/blog/2022/12/19/curl-sighting-tschugger/)
+ - [curl 7.87.0](https://daniel.haxx.se/blog/2022/12/21/curl-7-87-0/)
+ - [The 2022 curl security audit](https://daniel.haxx.se/blog/2022/12/21/the-2022-curl-security-audit/)
+ - [The curl fragment trick](https://daniel.haxx.se/blog/2022/12/23/the-curl-fragment-trick/)
+
+## Coming up
+
+ - Christmas
+ - end of year slow-down
+ - opening the curl feature window?
+
 # December 16, 2022
 
 ## Release prep
