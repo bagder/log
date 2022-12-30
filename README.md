@@ -1,5 +1,61 @@
 # Daniel's weekly report
 
+# December 30, 2022
+
+## Happy New year
+
+My last weekly report for the year. Happy New Year everyone!
+
+## Hardware
+
+While I am awaiting the last component for my new development PC to arrive at
+my house, I received a mac mini m1 donated to me and I set it up yesterday and
+did some initial curl builds to try it out. This should allow me to better
+work on some m1 related curl issues we have seen mentioned recently.
+
+Of course it also reminded me how annoying macOS is and how glad I am I can
+stick to my trusted Linux most days.
+
+## HTTP refactor
+
+Stefan Eissing has a huge PR up for merge that is rearranging a lot of HTTP
+internals to prepare for more future protocol fun, and I am working with
+reviewing that work and bouncing ideas on how things could or should be done.
+
+We had a productive design meeting this week with msh3-Nick and we agreed on a
+way forward for how to integrate ms3h into the mix as well so that we can move
+forward with all three supported QUIC/h3 backends.
+
+This week we created a list of a few requirements we have for HTTP/3 support
+in curl to work before we can remove the 'experimental' label from it.
+
+Stefan also works on a new test suite for curl, very creatively called "httpd
+tests", which are going to add a new set of HTTP tests we previously have been
+lacking. Primarily for HTTP/2 and HTTP/3 testing, including multiplexing with
+potentially a large number of streams both concurrently and serially. HTTP
+tests at a layer we have previously have not been able to test properly before
+with the existing curl test suite.
+
+This new test suite will be used to verify and fix pending HTTP/3 issues, with
+the goal of enabling HTTP/3 "for real" in all builds at some point in early
+2023.
+
+One of the requirements for "HTTP/3 for real" in curl is that we have a decent
+way for users to ask for HTTP/3 with graceful downgrade to earlier HTTP
+versions if h3 does not actually work.
+
+## Blog posts
+
+ - [At 17000 curl commits](https://daniel.haxx.se/blog/2022/12/27/at-17000-curl-commits/)
+ - [curl -w certs](https://daniel.haxx.se/blog/2022/12/28/curl-w-certs/)
+ - [An m1 for curl](https://daniel.haxx.se/blog/2022/12/30/an-m1-for-curl/)
+
+## Coming up
+
+ - 2023
+ - Merge Stefan's huge PR
+ - Work on fallout from the new test suite?
+
 # December 23, 2022
 
 ## Merry Christmas
