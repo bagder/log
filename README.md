@@ -10,7 +10,7 @@ updates of copyright years in curl source headers and feels like a relief.
 
 ## GSKit
 
-A discussioned fire up in the curl camp about the future and handling of the
+A discussion fired up in the curl camp about the future and handling of the
 TLS backend called GSKit, primarily used on the systems formerly known as
 AS/400 (nowadays called IBM i). We don't have any CI builds for this and when
 we break the code it can take a long time until someone notices. Not at good
@@ -38,7 +38,7 @@ that comma is the correct separator.
 
 Stefan's HTTP work has continued and we have worked a bit on the aftermath of
 the most recent refactor as a few regression turned up. There is a little more
-work needed to get the msh3 HTTP/3 backend back to funcionality, but we are on
+work needed to get the msh3 HTTP/3 backend back to functionality, but we are on
 it.
 
 Stefan is working on a huge new test suite for HTTP/2 and HTTP/3 which is
