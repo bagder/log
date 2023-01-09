@@ -1,5 +1,7 @@
 # Daniel's weekly report
 
+[Subscribe](https://lists.haxx.se/listinfo/daniel) to this as email.
+
 # January 8, 2023
 
 ## Copyrights
