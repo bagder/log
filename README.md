@@ -7,14 +7,15 @@
 ## weekly
 
 This report, my weekly report, is now possible to subscribe to as a weekly
-email. Subscribe here: https://lists.haxx.se/listinfo/daniel
+email. [Subscribe here](https://lists.haxx.se/listinfo/daniel)
 
 I was already emailing this to some receivers and I decided I might just as
 well open this up for anyone who wants to. I have not fully decided yet, but I
 might switch over to do email only soon. Let me know if this would be a
 problem for you.
 
-The emails are and will be archived here: https://lists.haxx.se/pipermail/daniel/
+The emails are and will be [archived
+here](https://lists.haxx.se/pipermail/daniel/)
 
 I might need to experiment a little with the exact formatting of the report
 as maybe markdown is not ideal for emails.
@@ -126,9 +127,9 @@ open source peeps. Names and details will follow later.
 
 ## Blog posts
 
- - Copyright without years: https://daniel.haxx.se/blog/2023/01/08/copyright-without-years/
- - My weekly report on email: https://daniel.haxx.se/blog/2023/01/10/my-weekly-report-on-email/
- - Selecting HTTP version (three): https://daniel.haxx.se/blog/2023/01/12/selecting-http-version-three/
+ - [Copyright without years](https://daniel.haxx.se/blog/2023/01/08/copyright-without-years/)
+ - [My weekly report on email](https://daniel.haxx.se/blog/2023/01/10/my-weekly-report-on-email/)
+ - [Selecting HTTP version (three)](https://daniel.haxx.se/blog/2023/01/12/selecting-http-version-three/)
 
 ## Coming up
 
