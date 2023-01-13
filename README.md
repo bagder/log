@@ -16,7 +16,7 @@ problem for you.
 
 The emails are and will be archived here: https://lists.haxx.se/pipermail/daniel/
 
-I might need to experiement a little with the exact formatting of the report
+I might need to experiment a little with the exact formatting of the report
 as maybe markdown is not ideal for emails.
 
 ## httpd tests
@@ -40,7 +40,7 @@ just have to wait until I get back.
 
 I have not had this long planned total offline vacation from curl in many
 years. It's also a little bit like a test how well things can run in my
-absense. According to stats, I merged 81% of all commits during the last
+absence. According to stats, I merged 81% of all commits during the last
 twelve months and authored 56% of them.
 
 If you need me for anything in my absence, please consider waiting until I get
@@ -110,7 +110,7 @@ that they happen because (some) applications subtly *abuse* the libcurl API
 and call `curl_global_cleanup()` while there are still some transfer in
 progress. This is clearly documented as not to be done. However, quite clearly
 this has been possible without any major drawback for a long time so now when
-crashes suddently occur after an upgrade to the latest curl release, users
+crashes suddenly occur after an upgrade to the latest curl release, users
 unsurprisingly blame libcurl for this since "it worked fine with older
 versions".
 
